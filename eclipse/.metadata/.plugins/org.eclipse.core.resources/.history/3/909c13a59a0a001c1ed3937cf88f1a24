@@ -1,0 +1,10 @@
+package me.rexysaur.void_.Client.cosmetics.impl;
+
+import me.rexysaur.void_.Client.cosmetics.CosmeticCape;
+
+public class classic extends CosmeticCape {
+	public classic()
+	{
+		super("clasic", 100);
+	}
+}

@@ -1,0 +1,11 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+public class CosmeticCape {
+	public String name, path;
+	public int price;
+	
+	public CosmeticCape(String name, int price, String path)
+	{
+		
+	}
+}

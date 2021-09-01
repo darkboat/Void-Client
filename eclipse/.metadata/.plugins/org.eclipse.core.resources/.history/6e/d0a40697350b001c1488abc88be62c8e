@@ -1,0 +1,49 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import java.util.ArrayList;
+
+import me.rexysaur.void_.Client.Client;
+import net.minecraft.util.ResourceLocation;
+
+public class HatManager {
+	public static boolean hasEquippedCape = false;
+	public static CosmeticCape equippedCape = null;
+	
+	public static void equipHat(CosmeticHat hat)
+	{
+		HatManager.hasEquippedCape = true;
+		HatManager.equippedCape = hat;
+	}
+	
+	public static void dequipCape()
+	{
+		HatManager.hasEquippedCape = false;
+		HatManager.equippedCape = null;
+	}
+	
+	public static boolean hasEquippedCape(CosmeticCape cape)
+	{
+		return HatManager.equippedCape.equals(cape);
+	}
+	
+	public static HatManager getCape(String name)
+	{
+		HatManager cape = null;
+		
+		for (Class<Set<CosmeticHat>> c : (ArrayList<Class<Set<CosmeticHat>>>) Client.INSTANCE.cosmeticmanager.hats)
+		{
+			System.out.println(c.name + " : " + name);
+			if(c.name.equals(name))
+			{
+				cape = c;
+			}
+		}
+
+		return cape;
+	}
+	
+	public static ResourceLocation loadCape()
+	{
+		return CapeManager.equippedCape.getResource();
+	}
+}

@@ -1,0 +1,30 @@
+[17:28:39] [Client thread/INFO]: Setting user: Player809
+[17:28:39] [Client thread/INFO]: (Session ID is token:0:Player809)
+[17:28:39] [Client thread/INFO]: LWJGL Version: 2.9.4
+[17:28:40] [Client thread/INFO]: Reloading ResourceManager: Default
+[17:28:40] [Client thread/ERROR]: Couldn't initialize twitch stream
+[17:28:40] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:28:40] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[17:28:40] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:28:40] [Thread-6/INFO]: OpenAL initialized.
+[17:28:41] [Sound Library Loader/INFO]: Sound engine started
+[17:28:41] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:28:43] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[17:28:43] [Server thread/INFO]: Generating keypair
+[17:28:43] [Server thread/INFO]: Preparing start region for level 0
+[17:28:44] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:28:44] [Server thread/INFO]: Player809[local:E:3110bc39] logged in with entity id 31 at (404.6231505395918, 73.0, 635.9348675818825)
+[17:28:44] [Server thread/INFO]: Player809 joined the game
+[17:28:54] [Server thread/INFO]: Saving and pausing game...
+[17:28:54] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:28:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:28:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:28:55] [Server thread/INFO]: Stopping server
+[17:28:55] [Server thread/INFO]: Saving players
+[17:28:55] [Server thread/INFO]: Saving worlds
+[17:28:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[17:28:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[17:28:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[17:28:56] [Client thread/INFO]: Stopping!
+[17:28:56] [Client thread/INFO]: SoundSystem shutting down...
+[17:28:56] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

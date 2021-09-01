@@ -1,0 +1,39 @@
+package me.rexysaur.void_.Client.util;
+
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.Callable;
+
+import me.rexysaur.void_.Client.Client;
+
+public class Interval {
+	protected static boolean isTiming = true;
+	
+	public Interval(int time)
+	{
+		Timer timer = new Timer();
+		timer.schedule(new IntervalTimer(time), time * 1000);
+	}
+	
+	public void cancel()
+	{
+		Interval.isTiming = false;
+	}
+
+	class IntervalTimer extends TimerTask{
+		public int time;
+		
+		public IntervalTimer(int time) {
+			this.time = time;
+		}
+
+		@Override
+		public void run() {
+			Client.INSTANCE.seconds += 1;
+			System.out.println(1);
+			Timer timer = new Timer();
+			timer.schedule(new IntervalTimer(time), time * 1000);
+		}
+	}
+}

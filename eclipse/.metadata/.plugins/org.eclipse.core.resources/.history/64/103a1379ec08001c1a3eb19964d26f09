@@ -1,0 +1,21 @@
+package me.rexysaur.void_.Client.util;
+
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.Callable;
+
+public abstract class Interval {
+	
+	public Interval(int time, Callable<Integer> func)
+	{
+		Timer timer = new Timer();
+		timer.schedule(new IntervalTimer(), null);
+	}
+
+	class IntervalTimer extends TimerTask{
+		@Override
+		public void run() {
+			
+		}
+	}
+}

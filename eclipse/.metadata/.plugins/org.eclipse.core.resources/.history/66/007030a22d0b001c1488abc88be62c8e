@@ -1,0 +1,19 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import java.awt.Color;
+
+public class CosmeticHat {
+	private String name;
+	private int price;
+	private Color col;
+	
+	public CosmeticHat(String name, int price, Color col)
+	{
+		
+	}
+	
+	public Strig getname()
+	{
+		
+	}
+}

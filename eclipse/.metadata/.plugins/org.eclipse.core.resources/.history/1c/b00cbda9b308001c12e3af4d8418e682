@@ -1,0 +1,29 @@
+package me.rexysaur.void_.Client.hud.mod;
+
+import java.util.ArrayList;
+
+import me.rexysaur.void_.Client.hud.mod.impl.FPSMod;
+import me.rexysaur.void_.Client.hud.mod.impl.Keystrokes;
+
+public class HudManager {
+	
+	public FPSMod FPS;
+	public Keystrokes KeyStrokes
+	
+	public ArrayList<HudMod> hudMods = new ArrayList<>();
+	
+	public HudManager()
+	{
+		
+		hudMods.add(new FPSMod());
+		hudMods.add(new Keystrokes());
+	}
+	
+	public void renderMods()
+	{
+		for(HudMod m : hudMods)
+		{
+			m.draw();
+		}
+	}
+}

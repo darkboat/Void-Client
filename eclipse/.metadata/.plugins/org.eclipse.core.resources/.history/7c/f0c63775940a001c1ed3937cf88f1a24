@@ -1,0 +1,16 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import net.minecraft.util.ResourceLocation;
+
+public class CosmeticCape {
+	public String name, path;
+	public int price;
+	public ResourceLocation resource;
+	
+	public CosmeticCape(String name, int price, String path)
+	{
+		this.name = name;
+		this.path = path;
+		this.price = price;
+	}
+}

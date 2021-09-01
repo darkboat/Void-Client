@@ -1,0 +1,5 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+public class Cosmetics {
+	public static ArrayList<CosmeticCape> capes = new ArrayList<>();
+}

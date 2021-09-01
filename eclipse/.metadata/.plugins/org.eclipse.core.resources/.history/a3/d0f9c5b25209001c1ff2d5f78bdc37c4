@@ -1,0 +1,49 @@
+package me.rexysaur.void_.Client.hud.mod.impl;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import me.rexysaur.void_.Client.hud.mod.HudMod;
+
+public class Crosshair extends HudMod {
+	Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
+	
+	public Crosshair()
+	{
+		super("Crosshair", 450, 300);
+		super.enabled = true;
+	}
+	
+	@Override
+	public void draw()
+	{
+		if (this.enabled)
+		{
+			fr.drawStringWithShadow("+", getX(), getY(), -1);
+			super.draw();
+		}
+	}
+	
+	@Override
+	public void renderDummy(int mouseX, int mouseY)
+	{
+		if (this.enabled)
+		{
+			fr.drawString(name,  getX(), getY(), -1);
+			
+			super.renderDummy(mouseX, mouseY);
+		}
+	}
+	
+	@Override
+	public int getWidth()
+	{
+		return 100;
+	}
+	
+	@Override
+	public int getHeight()
+	{
+		return 100;
+	}
+}

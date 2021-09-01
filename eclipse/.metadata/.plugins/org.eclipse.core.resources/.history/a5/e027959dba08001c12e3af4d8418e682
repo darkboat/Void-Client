@@ -1,0 +1,8 @@
+package me.rexysaur.void_.Client.util;
+
+import net.minecraft.util.ResourceLocation;
+
+public class DrawBackground {
+	mc.getTextureManager().bindTexture(new ResourceLocation("Void/background.jpg"));
+	this.drawModalRectWithCustomSizedTexture(0, 0, 0, 0, this.width, this.height, this.width, this.height);
+}

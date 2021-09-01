@@ -1,0 +1,47 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import me.rexysaur.void_.Client.Client;
+import net.minecraft.util.ResourceLocation;
+
+public class Cosmetics {
+	public static boolean hasEquippedCape = false;
+	public static CosmeticCape equippedCape = null;
+	
+	public static void equipCape(CosmeticCape cape)
+	{
+		Cosmetics.hasEquippedCape = true;
+		Cosmetics.equippedCape = cape;
+	}
+	
+	public static void dequipCape()
+	{
+		Cosmetics.hasEquippedCape = false;
+		Cosmetics.equippedCape = null;
+	}
+	
+	public static boolean hasEquippedCape(CosmeticCape cape)
+	{
+		return Cosmetics.equippedCape.equals(cape);
+	}
+	
+	public static CosmeticCape getCape(String name)
+	{
+		CosmeticCape cape = null;
+		
+		for (CosmeticCape c : (ArrayList<CosmeticCape>) Client.INSTANCE.cosmeticmanager.capes)
+		{
+			System.out.println(c.name + " : " + name);
+			if(c.name.equals(name))
+			{
+				cape = c;
+			}
+		}
+
+		return cape;
+	}
+	
+	public static ResourceLocation loadCape()
+	{
+		return Cosmetics.equippedCape.getResource();
+	}
+}

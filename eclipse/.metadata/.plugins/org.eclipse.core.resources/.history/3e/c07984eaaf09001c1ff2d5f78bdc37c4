@@ -1,0 +1,5 @@
+package me.rexysaur.void_.Client.ui;
+
+public class ClientKeystrokesMenu {
+
+}

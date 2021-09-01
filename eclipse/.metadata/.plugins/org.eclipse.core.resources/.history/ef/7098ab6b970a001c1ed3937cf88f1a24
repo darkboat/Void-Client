@@ -1,0 +1,29 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import java.util.ArrayList;
+
+import me.rexysaur.void_.Client.Player;
+
+public class Cosmetics {
+	public static boolean hasEquippedCape = false;
+	public static CosmeticCape equippedCape = null;
+	
+	public static ArrayList<CosmeticCape> capes = new ArrayList<>();
+	
+	public static void equipCape(CosmeticCape cape)
+	{
+		Cosmetics.hasEquippedCape = true;
+		Player.equippedCape = cape;
+	}
+	
+	public static void dequipCape()
+	{
+		Player.hasEquippedCape = false;
+		Player.equippedCape = null;
+	}
+	
+	public static boolean hasEquippedCape(CosmeticCape cape)
+	{
+		return Player.equippedCape.equals(cape);
+	}
+}

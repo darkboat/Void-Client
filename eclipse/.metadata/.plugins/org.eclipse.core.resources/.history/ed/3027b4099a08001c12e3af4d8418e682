@@ -1,0 +1,13 @@
+package me.rexysaur.void_.Client.hud.mod;
+
+import java.util.ArrayList;
+
+public class HudManager {
+	
+	public ArrayList<HudMod> hudMods = new ArrayList<>();
+	
+	HudManager()
+	{
+		
+	}
+}

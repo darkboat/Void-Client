@@ -1,0 +1,9 @@
+package me.rexysaur.void_.Client.mod;
+
+public class Mod {
+	
+	public String name, description;
+	public boolean enabled;
+	public Category category;
+
+}

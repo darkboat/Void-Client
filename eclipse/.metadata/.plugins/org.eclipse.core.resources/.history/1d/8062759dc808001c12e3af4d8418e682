@@ -1,0 +1,15 @@
+package me.rexysaur.void_.Client.Session;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.Session;
+
+class MinecraftLogin
+{
+	private static Minecraft mc = Minecraft.getMinecraft();
+	
+	public void login(String username, String password)
+	{
+		
+		new Session(username, password, )
+	}
+}

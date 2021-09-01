@@ -1,0 +1,13 @@
+package me.rexysaur.void_.Client.mod;
+
+public enum Category {
+	HUD,
+	WORLD,
+	COSMETIC;
+	
+	public Mod(String name, String description, Category category)
+	{
+		this.name = name;
+		this.description = description;
+	}
+}

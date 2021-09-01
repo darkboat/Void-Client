@@ -1,0 +1,20 @@
+package me.rexysaur.void_.Client.util;
+
+import me.rexysaur.void_.Client.Client;
+
+public enum CrosshairColours {
+	WHITE(255, 255, 255);
+	BLACK()
+
+	CrosshairColours(int... RGB) {
+		int red;
+		int green;
+		int blue;
+
+		for(int rgb : RGB)
+		{
+			
+		}
+		Client.INSTANCE.hudmanager.crosshair.color = col;
+	}
+}

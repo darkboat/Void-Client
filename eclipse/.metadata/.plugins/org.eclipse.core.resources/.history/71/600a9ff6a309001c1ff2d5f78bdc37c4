@@ -1,0 +1,18 @@
+package me.rexysaur.void_.Client.util;
+
+import java.awt.Color;
+
+import me.rexysaur.void_.Client.Client;
+
+public enum CrosshairColours {
+	WHITE(255, 255, 255);
+	BLACK()
+
+	CrosshairColours(int... RGB) {
+		int red = RGB[0];
+		int green = RGB[1];
+		int blue = RGB[2];
+
+		Client.INSTANCE.hudmanager.crosshair.color = new Color(red, green, blue).getRGB();
+	}
+}

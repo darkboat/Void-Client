@@ -1,0 +1,15 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import java.util.ArrayList;
+
+import me.rexysaur.void_.Client.cosmetics.impl.capes.classic;
+
+public class CosmeticManager {
+	public static ArrayList<CosmeticCape> capes = new ArrayList<>();
+	public static ArrayList<CosmeticCape> capes = new ArrayList<>();
+	
+	public CosmeticManager()
+	{
+		capes.add(new classic());
+	}
+}

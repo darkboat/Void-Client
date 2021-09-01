@@ -1,0 +1,14 @@
+package me.rexysaur.void_.Client.util;
+
+import java.io.File;
+
+public class File_ {
+	public static String Read(String file)
+	{
+		try {
+			File obj = new File(file);
+		}
+		
+		return "";
+	}
+}

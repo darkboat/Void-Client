@@ -1,0 +1,12 @@
+package me.rexysaur.void_.Client.util;
+
+public class Read {
+	public static String Read(String file)
+	{
+		try {
+			File obj = new File();
+		}
+		
+		return "";
+	}
+}

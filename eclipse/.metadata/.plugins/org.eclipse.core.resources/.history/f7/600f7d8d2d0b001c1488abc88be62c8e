@@ -1,0 +1,8 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+public class CosmeticHat {
+	public CosmeticHat(String name, int price, Color col)
+	{
+		
+	}
+}

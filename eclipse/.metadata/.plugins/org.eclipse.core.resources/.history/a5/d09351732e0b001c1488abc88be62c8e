@@ -1,0 +1,12 @@
+package me.rexysaur.void_.Client.cosmetics;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.renderer.entity.RenderPlayer;
+
+public class CosmeticHatBase extends ModelBase {
+	
+	public CosmeticHatBase(RenderPlayer player) {
+		
+	}
+	
+}

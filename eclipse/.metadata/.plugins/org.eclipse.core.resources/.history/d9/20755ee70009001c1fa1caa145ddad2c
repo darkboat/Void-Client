@@ -1,0 +1,79 @@
+package me.rexysaur.void_.Client;
+
+import me.rexysaur.void_.Client.event.EventManager;
+import me.rexysaur.void_.Client.event.EventTarget;
+import me.rexysaur.void_.Client.event.impl.ClientTick;
+import me.rexysaur.void_.Client.hud.HUDConfigScreen;
+import me.rexysaur.void_.Client.hud.mod.HudManager;
+import me.rexysaur.void_.Client.mod.ModManager;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.Session;
+
+public class Client {
+	public Minecraft mc = Minecraft.getMinecraft();
+	public static Client INSTANCE = new Client();
+	
+	// Managers
+	public EventManager eventmanager;
+	public ModManager modmanager;
+	public HudManager hudmanager;
+	
+	public String NAME = "Void Client";
+	public String VERSION = "1.0.0";
+	
+	public Session session;
+	private Object sessionService;
+	private String clientToken;
+	
+	public int seconds;
+	public int tick;
+	public long start;
+	public float delta;
+	
+	public int clicks;
+	
+	public void startup()
+	{
+		eventmanager = new EventManager();
+		modmanager = new ModManager();
+		hudmanager = new HudManager();
+		
+		eventmanager.register(this);
+		
+		this.start = System.currentTimeMillis();
+	}
+	
+	public void shutdown()
+	{
+		eventmanager.unregister(this);
+	}
+	
+	@EventTarget
+	public void onTick(ClientTick event)
+	{
+		
+		long time = System.currentTimeMillis();
+		
+		Client.INSTANCE.delta = time - Client.INSTANCE.start;
+		
+		Client.INSTANCE.tick += delta;
+		
+		if (Client.INSTANCE.tick >= 1000)
+		{
+			Client.INSTANCE.tick = 0;
+			
+			Client.INSTANCE.seconds += 1;
+			
+			if (Client.INSTANCE.seconds == 20)
+			{
+				Client.INSTANCE.seconds = 1;
+				
+			}
+		}
+		
+		if (mc.gameSettings.HUD_Config.isPressed())
+		{
+			mc.displayGuiScreen(new HUDConfigScreen());
+		}
+	}
+}

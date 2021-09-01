@@ -1,0 +1,10 @@
+package me.rexysaur.void_.Client.hud.mod;
+
+import net.minecraft.client.Minecraft;
+
+public class HudMod {
+	
+	public Minecraft mc = Minecraft.getMinecraft();
+	public FontRenderer fr = mc.fontRendererObj;
+
+}

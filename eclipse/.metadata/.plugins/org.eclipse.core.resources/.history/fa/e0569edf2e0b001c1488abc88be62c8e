@@ -1,0 +1,13 @@
+package me.rexysaur.void_.Client.cosmetics.impl.hats;
+
+import me.rexysaur.void_.Client.cosmetics.CosmeticHatBase;
+import net.minecraft.client.renderer.entity.RenderPlayer;
+
+public class TopHat extends CosmeticHatBase {
+
+	public TopHat(RenderPlayer player) {
+		super(player);
+		// TODO Auto-generated constructor stub
+	}
+
+}

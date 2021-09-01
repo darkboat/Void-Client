@@ -1,0 +1,24 @@
+package me.rexysaur.void_.Client.cosmetics.impl.hats;
+
+import java.awt.Color;
+
+import me.rexysaur.void_.Client.cosmetics.CosmeticHat;
+import me.rexysaur.void_.Client.cosmetics.CosmeticHatBase;
+import net.minecraft.client.entity.AbstractClientPlayer;
+
+public class TopHat extends CosmeticHat {
+	public TopHat() {
+		super("Top Hat", 100, new Color(255, 0, 0));
+	}
+
+	@Override
+	public void render(AbstractClientPlayer player, float limbSwing, float limbSwingAmount,
+			float partialTicks, float ageInTicks, float HeadYaw, float headPitch, float scale)
+	{
+		
+	}
+	
+	private class ModelTopHat extends CosmeticHatBase {
+		
+	}
+}

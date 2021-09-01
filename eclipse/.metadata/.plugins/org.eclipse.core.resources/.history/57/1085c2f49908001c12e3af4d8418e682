@@ -1,0 +1,5 @@
+package me.rexysaur.void_.Client.hud.mod;
+
+public class HudManager {
+
+}

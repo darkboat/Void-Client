@@ -1,0 +1,12 @@
+package me.rexysaur.void_.Client.mod;
+
+public class ModManager {
+	
+	public ArrayList<Mod> mod;
+	
+	public ModManager()
+	{
+		mods = new ArrayList<>();
+	}
+
+}

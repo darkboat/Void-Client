@@ -1,0 +1,11 @@
+package me.rexysaur.void_.Client.util;
+
+import me.rexysaur.void_.Client.Client;
+
+public enum CrosshairColours {
+	WHITE(-1);
+
+	CrosshairColours(int i) {
+		Client.INSTANCE.hudmanager.crosshair.color = i
+	}
+}

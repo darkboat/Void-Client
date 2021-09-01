@@ -1,0 +1,10 @@
+package me.rexysaur.void_.Client.util;
+
+import java.util.TimerTask;
+
+public class Interval {
+	public Interval(int time)
+	{
+
+	}
+}

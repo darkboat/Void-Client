@@ -1,0 +1,9 @@
+package me.rexysaur.void_.Client.mod;
+
+public class FPS_Counter {
+	public FPS_Counter()
+	{
+		super("FPSCounter", "Fps Counter", Category.HUD)
+		
+	}
+}

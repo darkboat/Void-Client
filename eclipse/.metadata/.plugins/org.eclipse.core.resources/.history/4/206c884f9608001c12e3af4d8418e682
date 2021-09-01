@@ -1,0 +1,7 @@
+package me.rexysaur.void_.Client.mod;
+
+public class Mod {
+	
+	public String name, description;
+
+}
