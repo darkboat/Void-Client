@@ -1,7 +1,0 @@
-package me.rexysaur.void_.Client.cosmetics.impl.hats;
-
-import me.rexysaur.void_.Client.cosmetics.CosmeticHatBase;
-
-public class TopHat extends CosmeticHatBase {
-
-}

@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Launcher.Main"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Launcher.ui.LauncherFrame"/>
-    <fullyQualifiedTypeName name="net.minecraft.util.Matrix4f"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.impl.EventUpdate"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.Event"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.hud.DraggableComponent"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.hud.mod.impl.FPSMod"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.settings.KeyBinding"/>
-    <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
-    <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.ClientMainMenu"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSelectWorld"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiMultiplayer"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiOptions"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
     <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.ClientOptionsMenu"/>
@@ -30,7 +18,6 @@
     <fullyQualifiedTypeName name="net.minecraft.client.main.GameConfiguration.UserInformation"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
     <fullyQualifiedTypeName name="java.net.Proxy"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.File_"/>
     <fullyQualifiedTypeName name="jdk.nashorn.internal.runtime.regexp.joni.Regex"/>
@@ -56,8 +43,21 @@
     <fullyQualifiedTypeName name="tv.twitch.broadcast.PixelFormat"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursKey"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursLetter"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Colours"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Session.MinecraftLogin"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.model.ModelBiped"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
+    <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.cosmetics.impl.hats.TopHat"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayer"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.cosmetics.HatManager"/>
+    <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>

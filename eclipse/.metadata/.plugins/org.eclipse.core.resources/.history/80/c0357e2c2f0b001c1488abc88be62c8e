@@ -1,8 +1,0 @@
-package me.rexysaur.void_.Client.cosmetics.impl.hats;
-
-import me.rexysaur.void_.Client.cosmetics.CosmeticHat;
-
-public class TopHat extends CosmeticHat {
-	@Override
-	public void render()
-}

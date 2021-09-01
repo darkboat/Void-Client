@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\mikae\Desktop\void 2.0\Void Launcher\.metadata\.plugins\org.eclipse.jdt.core
-1238318394.index
-3107995292.index

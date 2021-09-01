@@ -9,4 +9,7 @@
 		<item key="moveWizard.updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
 	</section>
+	<section name="UseSupertypeWizard">
+		<item key="rewriteInstanceOf" value="false"/>
+	</section>
 </section>
