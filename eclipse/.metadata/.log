@@ -1169,3 +1169,18 @@ org.eclipse.core.runtime.AssertionFailedException: null argument:
 
 !ENTRY org.eclipse.jdt.launching 4 4 2021-09-03 17:55:49.620
 !MESSAGE Could not determine Java version for location C:\Program Files (x86)\Java\jdk1.8.0_301\jre.
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-09-03 18:09:48.846
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-09-03 18:09:55.688
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-09-03 18:11:16.039
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.launching 4 4 2021-09-03 18:12:29.334
+!MESSAGE Could not determine Java version for location C:\Program Files (x86)\Java\jdk1.8.0_301\jre.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2021-09-03 18:12:31.582
+!MESSAGE Could not determine Java version for location C:\Program Files (x86)\Java\jdk1.8.0_301\jre.

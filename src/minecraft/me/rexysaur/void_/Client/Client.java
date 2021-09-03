@@ -20,7 +20,7 @@ public class Client {
 	public Minecraft mc = Minecraft.getMinecraft();
 	public static Client INSTANCE = new Client();
 	
-	public static final boolean DEBUG = true;
+	public static final boolean DEBUG = false;
 
 	// Managers
 	public EventManager eventmanager;
