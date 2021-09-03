@@ -1157,7 +1157,7 @@ public abstract class EntityPlayer extends EntityLivingBase
     {
         if (!this.isEntityInvulnerable(damageSrc))
         {
-            if (!damageSrc.isUnblockable() && this.isBlocking() && damageAmount > 0.0F)
+            if (!damageSrc.isUnblockable() && damageAmount > 0.0F)
             {
                 damageAmount = (1.0F + damageAmount) * 0.5F;
             }

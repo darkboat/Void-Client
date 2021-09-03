@@ -23,8 +23,8 @@ public class VoidClientOptions extends GuiScreen {
 	private final int increment = 40;
 	private final int done_distance = 75;
     
-    private static final GameSettings.Options[] videoOptions = new GameSettings.Options[] {GameSettings.Options.SHOW_KEYSTROKES, GameSettings.Options.SHOW_FPS};
-    
+    private static final GameSettings.Options[] videoOptions = new GameSettings.Options[] {GameSettings.Options.SHOW_FPS};
+
     public VoidClientOptions(GuiScreen parentScreenIn, GameSettings gameSettingsIn)
     {
         this.parentGuiScreen = parentScreenIn;
@@ -54,9 +54,9 @@ public class VoidClientOptions extends GuiScreen {
 		this.buttonList.clear();
 
         this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + (48 + increment + done_distance), I18n.format("gui.done", new Object[0])));
-        this.buttonList.add(new GuiButton(156, 115, 111, "Crosshair Settings"));
         this.buttonList.add(new GuiButton(157, 115, 140, "Keystrokes Settings"));
-        
+        this.buttonList.add(new GuiButton(156, 115, 111, "Crosshair Settings"));
+
         if (!OpenGlHelper.vboSupported)
         {
             GameSettings.Options[] agamesettings$options = new GameSettings.Options[videoOptions.length - 1];

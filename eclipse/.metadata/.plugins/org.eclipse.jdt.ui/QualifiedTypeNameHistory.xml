@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSelectWorld"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiMultiplayer"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiOptions"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
     <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.ClientOptionsMenu"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -31,7 +25,6 @@
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
     <fullyQualifiedTypeName name="javax.print.attribute.IntegerSyntax"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.CrosshairColours"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Client"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Background"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
     <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
@@ -45,7 +38,6 @@
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursLetter"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Colours"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Session.MinecraftLogin"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="net.minecraft.client.model.ModelBiped"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
@@ -59,5 +51,13 @@
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.cosmetics.HatManager"/>
     <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.FileExplorer"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Client"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.Event"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.impl.EventMessage"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.MessageManager"/>
 </qualifiedTypeNameHistroy>

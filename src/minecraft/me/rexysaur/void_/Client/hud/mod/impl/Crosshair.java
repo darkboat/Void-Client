@@ -16,7 +16,7 @@ public class Crosshair extends HudMod {
 	
 	public Crosshair()
 	{
-		super("Crosshair", 478, 267);
+		super("Crosshair", 478, 267, 0, 0);
 		super.enabled = true;
 
 		super.draggable = false;
@@ -25,6 +25,9 @@ public class Crosshair extends HudMod {
 	@Override
 	public void draw()
 	{
+		super.setWidth(getWidth());
+		super.setHeight(getHeight());
+		
 		if (this.enabled)
 		{
 			if (this.isShadow)
@@ -44,7 +47,7 @@ public class Crosshair extends HudMod {
 	{
 		if (this.enabled && this.draggable)
 		{
-			fr.drawString(name,  getX(), getY(), -1);
+			this.draw();
 			
 			super.renderDummy(mouseX, mouseY);
 		}

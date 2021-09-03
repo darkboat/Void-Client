@@ -890,7 +890,7 @@ public abstract class EntityLivingBase extends Entity
                     amount *= 0.75F;
                 }
 
-                this.limbSwingAmount = 1.5F;
+                this.limbSwingAmount = 2.5F;
                 boolean flag = true;
 
                 if ((float)this.hurtResistantTime > (float)this.maxHurtResistantTime / 2.0F)
@@ -900,7 +900,7 @@ public abstract class EntityLivingBase extends Entity
                         return false;
                     }
 
-                    this.damageEntity(source, amount - this.lastDamage);
+                    this.damageEntity(source, amount);
                     this.lastDamage = amount;
                     flag = false;
                 }
@@ -1453,6 +1453,7 @@ public abstract class EntityLivingBase extends Entity
     /**
      * Set sprinting switch for Entity.
      */
+
     public void setSprinting(boolean sprinting)
     {
         super.setSprinting(sprinting);

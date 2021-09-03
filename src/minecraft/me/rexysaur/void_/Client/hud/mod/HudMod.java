@@ -16,24 +16,34 @@ public class HudMod {
 	public DraggableComponent drag;
 	
 	public boolean draggable = true;
-	
+
 	public int x, y;
-	
-	public HudMod(String name, int x, int y)
+
+	public HudMod(String name, int x, int y, int w, int h)
 	{
 		this.name = name;
 		this.x = x;
 		this.y = y;
-		
-		drag = new DraggableComponent(x, y, x + getWidth(), y + getHeight(), new Color(0, 0, 0, 0).getRGB());
+
+		drag = new DraggableComponent(x, y, x + w, y + h, new Color(0, 0, 0, 0).getRGB());
 	}
 	
 	public int getWidth() {
-		return 50;
+		return 0;
 	}
 	
 	public int getHeight() {
-		return 50;
+		return 0;
+	}
+	
+	public void setWidth(int w)
+	{
+		drag.setWidth(w);
+	}
+	
+	public void setHeight(int h)
+	{
+		drag.setHeight(h);
 	}
 	
 	public void draw()

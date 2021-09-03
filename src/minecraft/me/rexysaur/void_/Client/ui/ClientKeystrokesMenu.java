@@ -24,7 +24,7 @@ public class ClientKeystrokesMenu extends GuiScreen {
 	    private GuiListExtended optionsRowList;
 
 	    /** An array of all of GameSettings.Options's video options. */
-	    private static final GameSettings.Options[] videoOptions = new GameSettings.Options[] {GameSettings.Options.KEYSTROKES_KEY_STATIC_COLOUR, GameSettings.Options.KEYSTROKES_KEY_PRESSED_COLOUR, GameSettings.Options.KEYSTROKES_LETTER_STATIC_COLOUR, GameSettings.Options.KEYSTROKES_LETTER_PRESSED_COLOUR};
+	    private static final GameSettings.Options[] videoOptions = new GameSettings.Options[] {GameSettings.Options.KEYSTROKES_KEY_STATIC_COLOUR, GameSettings.Options.KEYSTROKES_KEY_PRESSED_COLOUR, GameSettings.Options.KEYSTROKES_LETTER_STATIC_COLOUR, GameSettings.Options.KEYSTROKES_LETTER_PRESSED_COLOUR, GameSettings.Options.SHOW_KEYSTROKES};
 
 	    public ClientKeystrokesMenu(GuiScreen parentScreenIn, GameSettings gameSettingsIn)
 	    {

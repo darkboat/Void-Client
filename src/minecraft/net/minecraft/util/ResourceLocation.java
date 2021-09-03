@@ -7,21 +7,43 @@ public class ResourceLocation
     protected final String resourceDomain;
     protected final String resourcePath;
 
-    protected ResourceLocation(int p_i45928_1_, String... resourceName)
+    protected ResourceLocation(boolean isOutside, String... resourceName)
+    {
+    	if (isOutside)
+    	{
+            System.err.println(resourceName[0]);
+            
+            this.resourceDomain = "";
+            this.resourcePath = resourceName[0];
+    	}
+    	else
+    	{
+            this.resourceDomain = org.apache.commons.lang3.StringUtils.isEmpty(resourceName[0]) ? "minecraft" : resourceName[0].toLowerCase();
+            this.resourcePath = resourceName[1];
+    	}
+        Validate.notNull(this.resourcePath);
+    }
+    
+    protected ResourceLocation(String... resourceName)
     {
         this.resourceDomain = org.apache.commons.lang3.StringUtils.isEmpty(resourceName[0]) ? "minecraft" : resourceName[0].toLowerCase();
         this.resourcePath = resourceName[1];
         Validate.notNull(this.resourcePath);
     }
+    
+    public ResourceLocation(String resourceName, boolean isOutside)
+    {
+        this(isOutside, new String[] {resourceName});
+    }
 
     public ResourceLocation(String resourceName)
     {
-        this(0, splitObjectName(resourceName));
+        this(false, splitObjectName(resourceName));
     }
 
     public ResourceLocation(String resourceDomainIn, String resourcePathIn)
     {
-        this(0, new String[] {resourceDomainIn, resourcePathIn});
+        this(false, new String[] {resourceDomainIn, resourcePathIn});
     }
 
     /**
@@ -58,7 +80,7 @@ public class ResourceLocation
 
     public String toString()
     {
-        return this.resourceDomain + ':' + this.resourcePath;
+        return this.resourceDomain != "" ? this.resourceDomain + ':' + this.resourcePath : this.resourcePath;
     }
 
     public boolean equals(Object p_equals_1_)

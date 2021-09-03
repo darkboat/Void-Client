@@ -47,6 +47,16 @@ public class DraggableComponent {
     public int getWidth() {
         return width;
     }
+    
+    public void setWidth(int w)
+    {
+    	this.width = w;
+    }
+    
+    public void setHeight(int h)
+    {
+    	this.height = h;
+    }
 
     public int getColor() {
         return color;

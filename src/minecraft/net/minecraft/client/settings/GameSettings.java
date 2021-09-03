@@ -193,6 +193,7 @@ public class GameSettings
     public boolean forceUnicodeFont;
     
     public KeyBinding HUD_Config = new KeyBinding("Open Hud config", Keyboard.KEY_RSHIFT, "Client");
+	public KeyBinding cmd = new KeyBinding("Write Command", Keyboard.KEY_COMMA, "Client");
 
     public GameSettings(Minecraft mcIn, File p_i46326_2_)
     {

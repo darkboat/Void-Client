@@ -20,7 +20,7 @@ public class Keystrokes extends HudMod {
 	
 	public int keyColorStatic;
 	public int keyColorPressed;
-	
+
 	// Letter
 	public int currentLetColStatic = 0;
 	public int currentLetColPressed = 1;
@@ -29,14 +29,14 @@ public class Keystrokes extends HudMod {
 	public int letColorPressed;
 
 	public Keystrokes() {
-		super("Keystrokes", 5, 5);
+		super("Keystrokes", 5, 5, 58, 75);
 
 		this.keyColorStatic = Colours.getColour(Colours.BLACK);
 		this.letColorStatic = Colours.getColour(Colours.WHITE);
 
 		this.keyColorPressed = Colours.getColour(Colours.WHITE);
 		this.letColorPressed = Colours.getColour(Colours.BLACK);
-		
+
 		super.enabled = true;
 	}
 
@@ -83,7 +83,7 @@ public class Keystrokes extends HudMod {
 		private static final Key W = new Key("W", mc.gameSettings.keyBindForward, 21, 1, 18, 18);
 		private static final Key A = new Key("A", mc.gameSettings.keyBindLeft, 1, 21, 18, 18);
 		private static final Key S = new Key("S", mc.gameSettings.keyBindBack, 21, 21, 18, 18);
-		private static final Key D = new Key("D", mc.gameSettings.keyBindRight, 41, 1, 18, 18);
+		private static final Key D = new Key("D", mc.gameSettings.keyBindRight, 41, 21, 18, 18);
 		
 		private static final Key LMB = new Key("LMB", mc.gameSettings.keyBindAttack, 1, 41, 28, 18);
 		private static final Key RMB = new Key("RMB", mc.gameSettings.keyBindUseItem, 31, 41, 28, 18);
@@ -147,7 +147,7 @@ public class Keystrokes extends HudMod {
 	@Override
 	public int getHeight()
 	{
-		return 18;
+		return 75;
 	}
 	
 	@Override
@@ -175,7 +175,7 @@ public class Keystrokes extends HudMod {
 	{
 		if (this.enabled)
 		{
-			fr.drawString(name,  getX(), getY(), -1);
+			this.draw();
 			
 			super.renderDummy(mouseX, mouseY);
 		}
