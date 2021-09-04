@@ -4739,3 +4739,9 @@ java.lang.Error: SWT Resource was not properly disposed
 
 !ENTRY org.eclipse.jdt.launching 4 4 2021-09-04 20:21:17.693
 !MESSAGE Could not determine Java version for location C:\Program Files (x86)\Java\jdk1.8.0_301\jre.
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-09-04 20:41:20.374
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-09-04 20:42:35.072
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread

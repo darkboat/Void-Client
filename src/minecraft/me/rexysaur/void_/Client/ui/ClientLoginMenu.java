@@ -29,11 +29,6 @@ public class ClientLoginMenu extends GuiScreen {
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		if (this.enabled)
 		{
-			String[] creds = Client.isLoggedIn ? SaveManager.getCredentials() : null;
-			
-			String UName = Client.isLoggedIn ? creds[0] : null;
-			String PWord = Client.isLoggedIn ? creds[1] : null;
-
 			Background.Draw(this);
 
 			Gui.drawRect(0,  0,  this.width, this.height, new Color(0, 0, 0, 170).getRGB());

@@ -74,9 +74,12 @@ public class ClientMainMenu extends GuiScreen {
 		}
 		if (button.id == 4)
 		{
-			this.enabled = false;
-			this.buttonList.clear();
-			mc.displayGuiScreen(new ClientLoginMenu());
+			if (!Client.isLauncher)
+			{
+				this.enabled = false;
+				this.buttonList.clear();
+				mc.displayGuiScreen(new ClientLoginMenu());
+			}
 		}
 		if (button.id == 5)
 		{

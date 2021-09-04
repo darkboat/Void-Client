@@ -1,88 +1,12 @@
-[20:22:32] [Client thread/INFO]: LWJGL Version: 2.9.4
-[20:22:33] [Client thread/INFO]: Reloading ResourceManager: Default
-[20:22:33] [Client thread/ERROR]: Couldn't initialize twitch stream
-[20:22:33] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:22:33] [Thread-6/INFO]: Initializing LWJGL OpenAL
-[20:22:33] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:22:33] [Thread-6/INFO]: OpenAL initialized.
-[20:22:33] [Sound Library Loader/INFO]: Sound engine started
-[20:22:35] [Client thread/INFO]: Created: 512x512 textures-atlas
-[20:23:10] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
-[20:23:10] [Server thread/INFO]: Generating keypair
-[20:23:11] [Server thread/INFO]: Preparing start region for level 0
-[20:23:11] [Server thread/INFO]: Changing view distance to 8, from 10
-[20:23:11] [Server thread/INFO]: Player444[local:E:289bf241] logged in with entity id 87 at (32.905503589039874, 67.24918707874468, 160.09126319338057)
-[20:23:11] [Server thread/INFO]: Player444 joined the game
-[20:23:12] [Server thread/INFO]: Saving and pausing game...
-[20:23:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:23:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:23:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:23:22] [Server thread/INFO]: Saving and pausing game...
-[20:23:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:23:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:23:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:23:23] [Server thread/INFO]: Stopping server
-[20:23:23] [Server thread/INFO]: Saving players
-[20:23:23] [Server thread/INFO]: Saving worlds
-[20:23:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:23:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:23:23] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:23:36] [Client thread/INFO]: Connecting to play.hypixel.net, 25565
-[20:23:37] [Client thread/INFO]: [CHAT]                                      
-[20:23:37] [Client thread/INFO]: [CHAT]                          
-[20:23:48] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§f++§6] Duiven§f §6joined the lobby! §a<§c<§b<
-[20:23:48] [Client thread/INFO]: [CHAT] §b[MVP§6+§b] FRWN§f §6joined the lobby!
-[20:23:55] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§c++§6] Nutterbutter6978§f §6joined the lobby! §a<§c<§b<
-[20:24:02] [Client thread/INFO]: [CHAT] §b[MVP§c+§b] xp000§f §6joined the lobby!
-[20:24:27] [Client thread/INFO]: [CHAT] §b[MVP§c+§b] Lachflash2008§f §6joined the lobby!
-[20:24:29] [Client thread/INFO]: [CHAT] §b[MVP§e+§b] ytBreezilyEasily§f §6joined the lobby!
-[20:24:33] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§0++§6] JNHackers§f §6joined the lobby! §a<§c<§b<
-[20:24:40] [Client thread/INFO]: [CHAT] §b[MVP§e+§b] shiroqu§f §6joined the lobby!
-[20:24:45] [Client thread/INFO]: [CHAT] Lachflash2008 has found Speed Boost Perk I (Normal) in the Soul Well!
-[20:24:45] [Client thread/INFO]: [CHAT] §b[MVP§5+§b] Tommy0006§f §6joined the lobby!
-[20:24:50] [Client thread/INFO]: [CHAT] §b[MVP§c+§b] NerdCriend§f §6joined the lobby!
-[20:24:50] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§6++§6] Cheezz27§f §6joined the lobby! §a<§c<§b<
-[20:25:00] [Client thread/INFO]: [CHAT] §b[MVP§a+§b] just1kab§f §6joined the lobby!
-[20:25:10] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§2++§6] TriL0gy§f §6joined the lobby! §a<§c<§b<
-[20:25:12] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§c++§6] treeofficial§f §6joined the lobby! §a<§c<§b<
-[20:25:20] [Client thread/INFO]: [CHAT] §b[MVP§a+§b] Vidcraft§f §6joined the lobby!
-[20:25:24] [Client thread/INFO]: [CHAT] Cardboardboxem has found Arrow Recovery Perk I (Insane) in the Soul Well!
-[20:25:26] [Client thread/INFO]: [CHAT] [Mystery Box] §f§aPraskaBoy §ffound a §5Epic Parachute Gadget§f!
-[20:25:29] [Client thread/INFO]: [CHAT] §b[MVP§5+§b] ideac§f §6joined the lobby!
-[20:25:40] [Client thread/INFO]: [CHAT] EE_irox has found Robbery Perk I (Insane) in the Soul Well!
-[20:25:42] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§2++§6] dukwin§f §6joined the lobby! §a<§c<§b<
-[20:25:47] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§d++§6] MrOinker§f §6joined the lobby! §a<§c<§b<
-[20:25:55] [Client thread/INFO]: [CHAT] §b[MVP§c+§b] AnnieBananyGamer§f §6joined the lobby!
-[20:25:57] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§4++§6] Vxtus§f §6joined the lobby! §a<§c<§b<
-[20:26:17] [Client thread/INFO]: [CHAT] §b[MVP§c+§b] rienns§f §6joined the lobby!
-[20:26:28] [Client thread/INFO]: [CHAT] -----------------------------
-CHA_lz has invited you to join their party!
-You have 60 seconds to accept. Click here to join!
------------------------------
-[20:26:33] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§c++§6] MexiGamePRO§f §6joined the lobby! §a<§c<§b<
-[20:26:33] [Client thread/INFO]: [CHAT] §b[MVP§2+§b] pipqa§f §6joined the lobby!
-[20:26:37] [Client thread/INFO]: [CHAT] §b[MVP§a+§b] FlameFSC§f §6joined the lobby!
-[20:26:40] [Client thread/INFO]: [CHAT] §b[MVP§f+§b] Ak2u§f §6joined the lobby!
-[20:26:41] [Client thread/INFO]: [CHAT] §b[MVP§c+§b] yeethiggsboson3§f §6joined the lobby!
-[20:26:50] [Client thread/INFO]: [CHAT] §b[MVP§4+§b] luhp§f §6joined the lobby!
-[20:26:53] [Client thread/INFO]: [CHAT] You are AFK. Move around to return from AFK.
-[20:29:07] [Client thread/INFO]: [CHAT]                                      
-[20:29:07] [Client thread/INFO]: [CHAT]                          
-[20:29:08] [Client thread/INFO]: [CHAT] §b[MVP§2+§b] dmgk§f §6joined the lobby!
-[20:29:15] [Client thread/INFO]: [CHAT] §b[MVP§3+§b] itzMilo§f §6joined the lobby!
-[20:29:19] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§0++§6] Purplest§f §6joined the lobby! §a<§c<§b<
-[20:29:21] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:
-[20:29:23] [Client thread/INFO]: [CHAT]  §b>§c>§a>§r §6[MVP§0++§6] ak7aura§f §6joined the lobby! §a<§c<§b<
-[20:29:29] [Client thread/INFO]: [CHAT] Typpe_ has found Robbery Perk I (Normal) in the Soul Well!
-[20:29:37] [Client thread/INFO]: [CHAT] -----------------------------
-CHA_lz has invited you to join their party!
-You have 60 seconds to accept. Click here to join!
------------------------------
-[20:29:39] [Client thread/INFO]: [CHAT] §b[MVP§4+§b] rafi9§f §6joined the lobby!
-[20:29:45] [Client thread/INFO]: [CHAT] §b[MVP§2+§b] xUnA7med§f §6joined the lobby!
-[20:29:51] [Client thread/INFO]: [CHAT] Typpe_ has found Princess Kit (Insane) in the Soul Well!
-[20:29:53] [Client thread/INFO]: [CHAT] §b[MVP§2+§b] September22nd§f §6joined the lobby!
-[20:29:53] [Client thread/INFO]: [CHAT] September22nd found a ????? Mystery Box!
-[20:32:18] [Client thread/INFO]: Stopping!
-[20:32:18] [Client thread/INFO]: SoundSystem shutting down...
-[20:32:18] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:44:54] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:44:55] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:44:55] [Client thread/ERROR]: Couldn't initialize twitch stream
+[20:44:55] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:44:55] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[20:44:55] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:44:55] [Thread-6/INFO]: OpenAL initialized.
+[20:44:56] [Sound Library Loader/INFO]: Sound engine started
+[20:44:57] [Client thread/INFO]: Created: 512x512 textures-atlas
+[20:45:05] [Client thread/INFO]: Stopping!
+[20:45:05] [Client thread/INFO]: SoundSystem shutting down...
+[20:45:05] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

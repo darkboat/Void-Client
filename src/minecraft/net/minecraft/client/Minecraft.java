@@ -382,13 +382,15 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.sessionService = (new YggdrasilAuthenticationService(gameConfig.userInfo.proxy, UUID.randomUUID().toString())).createMinecraftSessionService();
         this.session = gameConfig.userInfo.session;
         
-        String[] creds = SaveManager.getCredentials();
-        
-        String username = creds[0];
-        String password = creds[1];
-        
-        ClientLogin.login(username, password);
-
+        if (!Client.isLauncher)
+        {
+            String[] creds = SaveManager.getCredentials();
+            
+            String username = creds[0];
+            String password = creds[1];
+            
+            ClientLogin.login(username, password);
+        }
         this.isDemo = gameConfig.gameInfo.isDemo;
         this.displayWidth = gameConfig.displayInfo.width > 0 ? gameConfig.displayInfo.width : 1;
         this.displayHeight = gameConfig.displayInfo.height > 0 ? gameConfig.displayInfo.height : 1;

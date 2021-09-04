@@ -22,7 +22,7 @@ public class Client {
 	public Minecraft mc = Minecraft.getMinecraft();
 	public static Client INSTANCE = new Client();
 
-	public static final boolean DEBUG = false;
+	public static final boolean isLauncher = true;
 
 	// Managers
 	public EventManager eventmanager;
@@ -49,7 +49,7 @@ public class Client {
 	
 	public static int ENCRYPT_SALT = 5;
 
-	public static boolean isLoggedIn = DEBUG ? true : false;
+	public static boolean isLoggedIn = false;
 
 	public void startup()
 	{
@@ -66,7 +66,10 @@ public class Client {
 
 		CapeManager.equipCape(CapeManager.getCape("classic"));
 		
-		SaveManager.getCredentials();
+		if (!isLauncher)
+		{
+			SaveManager.getCredentials();
+		}
 	}
 
 	public void shutdown()
