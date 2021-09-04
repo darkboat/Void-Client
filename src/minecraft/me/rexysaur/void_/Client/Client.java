@@ -22,7 +22,7 @@ public class Client {
 	public Minecraft mc = Minecraft.getMinecraft();
 	public static Client INSTANCE = new Client();
 
-	public static final boolean isLauncher = false;
+	public static final boolean isLauncher = true;
 
 	// Managers
 	public EventManager eventmanager;
