@@ -22,7 +22,7 @@ public class Client {
 	public Minecraft mc = Minecraft.getMinecraft();
 	public static Client INSTANCE = new Client();
 
-	public static final boolean isLauncher = true;
+	public static final boolean isLauncher = false;
 
 	// Managers
 	public EventManager eventmanager;
@@ -32,7 +32,7 @@ public class Client {
 	
 	public ArrayList<String> KeystrokesKeyColours = new ArrayList<>();
 	public ArrayList<String> KeystrokesLetColours = new ArrayList<>();
-	
+
 	public String NAME = "Void Client";
 	public String VERSION = "1.0.0";
 
@@ -49,7 +49,7 @@ public class Client {
 	
 	public static int ENCRYPT_SALT = 5;
 
-	public static boolean isLoggedIn = false;
+	public static boolean isLoggedIn = isLauncher ? true : false;
 
 	public void startup()
 	{
