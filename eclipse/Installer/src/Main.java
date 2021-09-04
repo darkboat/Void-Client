@@ -14,7 +14,7 @@ public class Main {
 		File json = new File(path + "Void.json");
 		
 		FileUtils.copyURLToFile(new URL("https://github.com/darkboat/Void-Client/raw/master/Export/Void/Void.jar"), jar);
-		FileUtils.copyURLToFile(new URL("https://github.com/darkboat/Void-Client/blob/master/Export/Void/Void.json"), json);
+		FileUtils.copyURLToFile(new URL("https://raw.githubusercontent.com/darkboat/Void-Client/master/Export/Void/Void.json"), json);
 		
 		System.exit(1);
 	}
