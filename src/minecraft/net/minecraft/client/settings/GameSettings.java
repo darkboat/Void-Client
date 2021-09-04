@@ -178,9 +178,9 @@ public class GameSettings
     public float saturation;
 
     // Custom
-    private final String[] Crosshair_Colours = new String[] {"WHITE", "BLACK", "RED", "GREEN", "BLUE"};
-    private final String[] KeystrokesKeyColours = new String[] {"WHITE", "BLACK", "RED", "GREEN", "BLUE"};
-    private final String[] KeystrokesLetColours = new String[] {"WHITE", "BLACK", "RED", "GREEN", "BLUE"};
+    public static final String[] Crosshair_Colours = new String[] {"WHITE", "BLACK", "RED", "GREEN", "BLUE"};
+    public static final String[] KeystrokesKeyColours = new String[] {"WHITE", "BLACK", "RED", "GREEN", "BLUE"};
+    public static final String[] KeystrokesLetColours = new String[] {"WHITE", "BLACK", "RED", "GREEN", "BLUE"};
 
     /** GUI scale */
     public int guiScale;
@@ -192,15 +192,14 @@ public class GameSettings
     public String language;
     public boolean forceUnicodeFont;
     
-    public KeyBinding HUD_Config = new KeyBinding("Open Hud config", Keyboard.KEY_RSHIFT, "Client");
-	public KeyBinding cmd = new KeyBinding("Write Command", Keyboard.KEY_COMMA, "Client");
+    public KeyBinding HUD_Config = new KeyBinding("Open HUD config", Keyboard.KEY_RSHIFT, "Void");
 
     public GameSettings(Minecraft mcIn, File p_i46326_2_)
     {
         this.keyBindings = (KeyBinding[])ArrayUtils.addAll(new KeyBinding[] {this.keyBindAttack, this.keyBindUseItem, this.keyBindForward, this.keyBindLeft, this.keyBindBack, this.keyBindRight, this.keyBindJump, this.keyBindSneak, this.keyBindSprint, this.keyBindDrop, this.keyBindInventory, this.keyBindChat, this.keyBindPlayerList, this.keyBindPickBlock, this.keyBindCommand, this.keyBindScreenshot, this.keyBindTogglePerspective, this.keyBindSmoothCamera, this.keyBindStreamStartStop, this.keyBindStreamPauseUnpause, this.keyBindStreamCommercials, this.keyBindStreamToggleMic, this.keyBindFullscreen, this.keyBindSpectatorOutlines}, this.keyBindsHotbar);
         this.difficulty = EnumDifficulty.NORMAL;
         this.lastServer = "";
-        this.fovSetting = 70.0F;
+        this.fovSetting = 500.0F;
         this.language = "en_US";
         this.forceUnicodeFont = false;
         this.mc = mcIn;

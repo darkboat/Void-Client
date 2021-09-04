@@ -1,5 +1,6 @@
 package net.minecraft.client.entity;
 
+import me.rexysaur.void_.Client.Client;
 import me.rexysaur.void_.Client.event.impl.EventUpdate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MovingSoundMinecartRiding;
@@ -322,6 +323,8 @@ public class EntityPlayerSP extends AbstractClientPlayer
      */
     protected void damageEntity(DamageSource damageSrc, float damageAmount)
     {
+    	Client.INSTANCE.combo += 1;
+    	
         if (!this.isEntityInvulnerable(damageSrc))
         {
             this.setHealth(this.getHealth() - damageAmount);

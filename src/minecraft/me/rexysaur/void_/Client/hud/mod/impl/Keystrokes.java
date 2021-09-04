@@ -1,15 +1,19 @@
 package me.rexysaur.void_.Client.hud.mod.impl;
 
 import java.awt.Color;
+import java.io.IOException;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.lwjgl.opengl.GL11;
 
 import me.rexysaur.void_.Client.hud.mod.HudMod;
 import me.rexysaur.void_.Client.util.Colours;
 import me.rexysaur.void_.Client.util.KeystrokesColoursKey;
 import me.rexysaur.void_.Client.util.KeystrokesColoursLetter;
+import me.rexysaur.void_.Client.util.SaveManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.settings.GameSettings;
 import net.minecraft.client.settings.KeyBinding;
 
 public class Keystrokes extends HudMod {
@@ -36,6 +40,35 @@ public class Keystrokes extends HudMod {
 
 		this.keyColorPressed = Colours.getColour(Colours.WHITE);
 		this.letColorPressed = Colours.getColour(Colours.BLACK);
+		
+		try {
+			String KKP = SaveManager.getDataFromSave("KeystrokesKeyPressed");
+			String KKS = SaveManager.getDataFromSave("KeystrokesKeyStatic");
+			String KLP = SaveManager.getDataFromSave("KeystrokesLetPressed");
+			String KLS = SaveManager.getDataFromSave("KeystrokesLetStatic");
+			
+			if (KKP != null && KKS != null && KLP != null && KLS != null)
+			{
+				int kkp = Integer.parseInt(KKP);
+				int kks = Integer.parseInt(KKS);
+				int klp = Integer.parseInt(KLP);
+				int kls = Integer.parseInt(KLS);
+				
+				keyColorPressed = kkp;
+				keyColorStatic = kks;
+				letColorPressed = klp;
+				letColorStatic = kls;
+				
+				currentKeyColPressed = ArrayUtils.indexOf(GameSettings.KeystrokesKeyColours, KeystrokesColoursKey.getColourByInt(kkp));
+				currentKeyColStatic = ArrayUtils.indexOf(GameSettings.KeystrokesKeyColours, KeystrokesColoursKey.getColourByInt(kks));
+				
+				currentLetColPressed = ArrayUtils.indexOf(GameSettings.KeystrokesLetColours, KeystrokesColoursLetter.getColourByInt(klp));
+				currentLetColStatic = ArrayUtils.indexOf(GameSettings.KeystrokesLetColours, KeystrokesColoursLetter.getColourByInt(kls));
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		super.enabled = true;
 	}

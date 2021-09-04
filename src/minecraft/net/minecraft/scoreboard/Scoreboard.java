@@ -215,29 +215,32 @@ public class Scoreboard
 
     public void removeObjective(ScoreObjective p_96519_1_)
     {
-        this.scoreObjectives.remove(p_96519_1_.getName());
+    	if (p_96519_1_ != null)
+    	{
+            this.scoreObjectives.remove(p_96519_1_.getName());
 
-        for (int i = 0; i < 19; ++i)
-        {
-            if (this.getObjectiveInDisplaySlot(i) == p_96519_1_)
+            for (int i = 0; i < 19; ++i)
             {
-                this.setObjectiveInDisplaySlot(i, (ScoreObjective)null);
+                if (this.getObjectiveInDisplaySlot(i) == p_96519_1_)
+                {
+                    this.setObjectiveInDisplaySlot(i, (ScoreObjective)null);
+                }
             }
-        }
 
-        List<ScoreObjective> list = (List)this.scoreObjectiveCriterias.get(p_96519_1_.getCriteria());
+            List<ScoreObjective> list = (List)this.scoreObjectiveCriterias.get(p_96519_1_.getCriteria());
 
-        if (list != null)
-        {
-            list.remove(p_96519_1_);
-        }
+            if (list != null)
+            {
+                list.remove(p_96519_1_);
+            }
 
-        for (Map<ScoreObjective, Score> map : this.entitiesScoreObjectives.values())
-        {
-            map.remove(p_96519_1_);
-        }
+            for (Map<ScoreObjective, Score> map : this.entitiesScoreObjectives.values())
+            {
+                map.remove(p_96519_1_);
+            }
 
-        this.func_96533_c(p_96519_1_);
+            this.func_96533_c(p_96519_1_);
+    	}
     }
 
     /**
@@ -293,14 +296,17 @@ public class Scoreboard
      */
     public void removeTeam(ScorePlayerTeam p_96511_1_)
     {
-        this.teams.remove(p_96511_1_.getRegisteredName());
+    	if (p_96511_1_ != null)
+    	{
+            this.teams.remove(p_96511_1_.getRegisteredName());
 
-        for (String s : p_96511_1_.getMembershipCollection())
-        {
-            this.teamMemberships.remove(s);
-        }
+            for (String s : p_96511_1_.getMembershipCollection())
+            {
+                this.teamMemberships.remove(s);
+            }
 
-        this.func_96513_c(p_96511_1_);
+            this.func_96513_c(p_96511_1_);
+    	}
     }
 
     /**

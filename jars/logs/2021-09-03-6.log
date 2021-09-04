@@ -1,0 +1,11 @@
+[22:25:40] [Client thread/INFO]: Setting user: rexgraal
+[22:25:40] [Client thread/INFO]: (Session ID is token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NjJkNGIyNmY5YjA5NWExMGFiOWRlN2RiOWQ1ZGU4YSIsInlnZ3QiOiJiNWNiZDE5ZmRlNzE0Zjk0YjY5MGQ1ZGM1OTUzMGE1OSIsInNwciI6ImZmYjE4MWQ2NzM1YzQyM2FhYTlmMmIwMTY0MWI2ZTBiIiwiaXNzIjoiWWdnZHJhc2lsLUF1dGgiLCJleHAiOjE2MzA4NzM1MzksImlhdCI6MTYzMDcwMDczOX0.1l20A8pvdvhCBe4Uf2yiQo0rKzkbyjvD7eOLie8SwxY:ffb181d6735c423aaa9f2b01641b6e0b)
+[22:25:41] [Client thread/INFO]: LWJGL Version: 2.9.4
+[22:25:41] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:25:41] [Client thread/ERROR]: Couldn't initialize twitch stream
+[22:25:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:25:41] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[22:25:41] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:25:41] [Thread-6/INFO]: OpenAL initialized.
+[22:25:42] [Sound Library Loader/INFO]: Sound engine started
+[22:25:42] [Client thread/INFO]: Created: 512x512 textures-atlas

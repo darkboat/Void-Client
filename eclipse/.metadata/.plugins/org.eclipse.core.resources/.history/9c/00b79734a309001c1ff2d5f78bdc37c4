@@ -1,9 +1,0 @@
-package me.rexysaur.void_.Client.util;
-
-public enum CrosshairColours {
-	WHITE(-1);
-
-	CrosshairColours(int i) {
-		
-	}
-}

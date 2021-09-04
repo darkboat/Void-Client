@@ -1,8 +1,10 @@
 package me.rexysaur.void_.Client.hud.mod;
 
 import java.awt.Color;
+import java.io.IOException;
 
 import me.rexysaur.void_.Client.hud.DraggableComponent;
+import me.rexysaur.void_.Client.util.SaveManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 
@@ -24,8 +26,29 @@ public class HudMod {
 		this.name = name;
 		this.x = x;
 		this.y = y;
+		
+		try {
+			String xFromSave = SaveManager.getDataFromSave(name + "x");
+			String yFromSave = SaveManager.getDataFromSave(name + "y");
+			
+//			System.err.println(name + "x" + "  :  " + name + "y");
+			
+			if(xFromSave != "")
+			{
+				this.x = Integer.parseInt(xFromSave);
+			}
+			if(yFromSave != "")
+			{
+				this.y = Integer.parseInt(yFromSave);
+			}
+			
+			System.err.println(this.name + "x = " + this.x + "    :    " + this.name + "y = " + this.y);
 
-		drag = new DraggableComponent(x, y, x + w, y + h, new Color(0, 0, 0, 0).getRGB());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		drag = new DraggableComponent(this.x, this.y, this.x + w, this.y + h, new Color(0, 0, 0, 0).getRGB());
 	}
 	
 	public int getWidth() {
@@ -35,12 +58,12 @@ public class HudMod {
 	public int getHeight() {
 		return 0;
 	}
-	
+
 	public void setWidth(int w)
 	{
 		drag.setWidth(w);
 	}
-	
+
 	public void setHeight(int h)
 	{
 		drag.setHeight(h);

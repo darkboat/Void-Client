@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.entity{EntityPlayerSP.java[EntityPlayerSP" modifiers="1" timestamp="1630608913537"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.entity{EntityPlayerSP.java[EntityPlayerSP" modifiers="1" timestamp="1630692413131"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiIngame.java[GuiIngame" modifiers="1" timestamp="1630221989948"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiButton.java[GuiButton" modifiers="1" timestamp="1630227569101"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiOptions.java[GuiOptions" modifiers="1" timestamp="1630237202170"/>
@@ -9,7 +9,7 @@
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiVideoSettings.java[GuiVideoSettings" modifiers="1" timestamp="1630219666226"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.network.play.server{S42PacketCombatEvent.java[S42PacketCombatEvent[Event" modifiers="16393" timestamp="1630219669654"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.entity.player{EntityPlayerMP.java[EntityPlayerMP" modifiers="1" timestamp="1630340460677"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.settings{GameSettings.java[GameSettings" modifiers="1" timestamp="1630609849849"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.settings{GameSettings.java[GameSettings" modifiers="1" timestamp="1630701175091"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.renderer.entity{RenderPlayer.java[RenderPlayer" modifiers="1" timestamp="1630509898035"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.util{ResourceLocation.java[ResourceLocation" modifiers="1" timestamp="1630595185317"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.network{Packet.java[Packet" modifiers="513" timestamp="1630219669262"/>

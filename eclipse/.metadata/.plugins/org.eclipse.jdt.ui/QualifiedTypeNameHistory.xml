@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.ClientOptionsMenu"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
-    <fullyQualifiedTypeName name="java.lang.Long"/>
     <fullyQualifiedTypeName name="net.minecraft.util.Session"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService"/>
@@ -24,7 +19,6 @@
     <fullyQualifiedTypeName name="java.awt.Toolkit"/>
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
     <fullyQualifiedTypeName name="javax.print.attribute.IntegerSyntax"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.CrosshairColours"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Background"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
     <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
@@ -34,17 +28,13 @@
     <fullyQualifiedTypeName name="tv.twitch.broadcast.UserInfo"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.Stream"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.PixelFormat"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursKey"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursLetter"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Colours"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Session.MinecraftLogin"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="net.minecraft.client.model.ModelBiped"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.cosmetics.impl.hats.TopHat"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderPlayer"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
@@ -54,10 +44,20 @@
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.FileExplorer"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Client"/>
     <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.Event"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.impl.EventMessage"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.MessageManager"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Client"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.CrosshairColours"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.hud.mod.impl.Crosshair"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.SaveManager"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursKey"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.ArrayUtils"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursLetter"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 </qualifiedTypeNameHistroy>

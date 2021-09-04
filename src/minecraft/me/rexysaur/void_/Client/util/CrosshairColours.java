@@ -11,8 +11,6 @@ public enum CrosshairColours {
 	GREEN(0, 255, 0),
 	BLUE(0, 0, 255);
 	
-	public int currentColour = Client.INSTANCE.hudmanager.crosshair.color;
-	
 	public int red;
 	public int green;
 	public int blue;

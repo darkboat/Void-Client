@@ -23,7 +23,7 @@ public class MinecraftLogin {
 	static String profileID;
 	static String response;
 	static String username;
-	
+
 	static Session session = Minecraft.getMinecraft().getSession();
 	static String token = MinecraftLogin.session.getToken();
 	

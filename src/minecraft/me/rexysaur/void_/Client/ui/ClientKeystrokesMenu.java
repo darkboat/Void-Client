@@ -131,9 +131,9 @@ public class ClientKeystrokesMenu extends GuiScreen {
 	     */
 	    public void drawScreen(int mouseX, int mouseY, float partialTicks)
 	    {
-	    	int displayX1 = 200;
+	    	int displayX1 = 100;
 	    	int displayY1 = 100;
-	    	int displayX2 = 100;
+	    	int displayX2 = 200;
 	    	int displayY2 = 100;
 
 	        Background.Draw(this);

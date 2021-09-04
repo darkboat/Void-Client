@@ -11,7 +11,6 @@ import net.minecraft.client.gui.GuiMultiplayer;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiSelectWorld;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.util.ResourceLocation;
 
 public class ClientMainMenu extends GuiScreen {
 	public boolean enabled = true;
@@ -43,11 +42,12 @@ public class ClientMainMenu extends GuiScreen {
 		this.enabled = true;
 		
 		this.buttonList.add(new GuiButton(1, 10, height / 2 - 40, "SinglePlayer"));
-		this.buttonList.add(new GuiButton(2, 10, height / 2 - 15, "Multiplayer"));
+		this.buttonList.add(new GuiButton(2, 10, height / 2 - 15, "Multiplayer  LOGGED IN = " + (Client.isLoggedIn ? "YES" : "NO")));
 		this.buttonList.add(new GuiButton(3, 10, height / 2 + 10, "Options"));
-		this.buttonList.add(new GuiButton(4, 10, height / 2 + 35, "Quit"));
+		this.buttonList.add(new GuiButton(4, 10, height / 2 + 35, "Account"));
+		this.buttonList.add(new GuiButton(5, 10, height / 2 + 60, "Quit"));
 	}
-	
+
 	@Override
 	protected void actionPerformed(GuiButton button) throws IOException
 	{
@@ -59,9 +59,12 @@ public class ClientMainMenu extends GuiScreen {
 		}
 		if (button.id == 2)
 		{
-			this.enabled = false;
-			this.buttonList.clear();
-			mc.displayGuiScreen(new GuiMultiplayer(this));
+			if (Client.isLoggedIn)
+			{
+				this.enabled = false;
+				this.buttonList.clear();
+				mc.displayGuiScreen(new GuiMultiplayer(this));
+			}
 		}
 		if (button.id == 3)
 		{
@@ -70,6 +73,12 @@ public class ClientMainMenu extends GuiScreen {
 			mc.displayGuiScreen(new ClientOptionsMenu(this, mc.gameSettings));
 		}
 		if (button.id == 4)
+		{
+			this.enabled = false;
+			this.buttonList.clear();
+			mc.displayGuiScreen(new ClientLoginMenu());
+		}
+		if (button.id == 5)
 		{
 			this.enabled = false;
 			this.buttonList.clear();

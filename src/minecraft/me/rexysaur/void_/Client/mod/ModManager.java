@@ -2,20 +2,18 @@ package me.rexysaur.void_.Client.mod;
 
 import java.util.ArrayList;
 
-import me.rexysaur.void_.Client.mod.impl.cmd;
-import net.java.games.input.Keyboard;
+import me.rexysaur.void_.Client.mod.impl.EnchantGlint;
 
 public class ModManager {
 	
-	public ArrayList<Mod> mods;
+	public static EnchantGlint enchantglint;
 	
-	public cmd CMD;
+	public ArrayList<Mod> mods;
 
 	public ModManager()
 	{
 		mods = new ArrayList<>();
 		
-		mods.add(CMD = new cmd());
+		mods.add(enchantglint = new EnchantGlint());
 	}
-
 }

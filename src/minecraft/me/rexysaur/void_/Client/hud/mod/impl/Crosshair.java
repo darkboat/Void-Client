@@ -1,9 +1,14 @@
 package me.rexysaur.void_.Client.hud.mod.impl;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
+import java.awt.Color;
+import java.io.IOException;
+
+import org.apache.commons.lang3.ArrayUtils;
 
 import me.rexysaur.void_.Client.hud.mod.HudMod;
+import me.rexysaur.void_.Client.util.CrosshairColours;
+import me.rexysaur.void_.Client.util.SaveManager;
+import net.minecraft.client.settings.GameSettings;
 
 public class Crosshair extends HudMod {
 	public int width = 100;
@@ -20,6 +25,28 @@ public class Crosshair extends HudMod {
 		super.enabled = true;
 
 		super.draggable = false;
+
+		try {
+			String data = SaveManager.getDataFromSave("CrosshairColour");
+
+			if (data == null)
+			{
+				this.currentCol = 0;
+				this.color = -1;
+			}
+			else
+			{
+				this.currentCol = ArrayUtils.indexOf(GameSettings.Crosshair_Colours, data);
+
+				CrosshairColours cc = CrosshairColours.valueOf(GameSettings.Crosshair_Colours[currentCol]);
+
+				this.color = new Color(cc.red, cc.green, cc.blue).getRGB();
+			}
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Override

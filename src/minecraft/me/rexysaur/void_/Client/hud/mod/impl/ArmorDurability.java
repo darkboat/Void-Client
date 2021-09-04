@@ -74,22 +74,22 @@ public class ArmorDurability extends HudMod {
 		
 		if (HelmDurability > 0)
 		{
-			fr.drawStringWithShadow(Integer.toString(HelmDurability), this.getX() + 5, this.getY() + shifty, color);
+			fr.drawStringWithShadow(Integer.toString(HelmDurability), super.getX() + 5, super.getY() + shifty, color);
 			Anony.drawIcon("helmet", getX() - iconSize, getY());
 		}
 		if (ChestDurability > 0)
 		{
-			fr.drawStringWithShadow(Integer.toString(ChestDurability), this.getX() + 5, this.getY() + shifty + (distance * 1), color);
+			fr.drawStringWithShadow(Integer.toString(ChestDurability), super.getX() + 5, super.getY() + shifty + (distance * 1), color);
 			Anony.drawIcon("chestplate", getX() - iconSize, getY() + (distance * 1));			
 		}
 		if (LegDurability > 0)
 		{
-			fr.drawStringWithShadow(Integer.toString(LegDurability), this.getX() + 5, this.getY() + shifty + (distance * 2), color);
+			fr.drawStringWithShadow(Integer.toString(LegDurability), super.getX() + 5, super.getY() + shifty + (distance * 2), color);
 			Anony.drawIcon("leggings", getX() - iconSize, getY() + (distance * 2));
 		}
 		if (BootsDurability > 0)
 		{
-			fr.drawStringWithShadow(Integer.toString(BootsDurability), this.getX() + 5, this.getY() + shifty + (distance * 3), color);
+			fr.drawStringWithShadow(Integer.toString(BootsDurability), super.getX() + 5, super.getY() + shifty + (distance * 3), color);
 			Anony.drawIcon("boots", getX() - iconSize, getY() + (distance * 3));
 		}
 		

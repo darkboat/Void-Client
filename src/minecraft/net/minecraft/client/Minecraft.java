@@ -10,7 +10,6 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
@@ -61,6 +60,8 @@ import me.rexysaur.void_.Client.Client;
 import me.rexysaur.void_.Client.Session.MinecraftLogin;
 import me.rexysaur.void_.Client.event.impl.ClientTick;
 import me.rexysaur.void_.Client.ui.ClientMainMenu;
+import me.rexysaur.void_.Client.util.ClientLogin;
+import me.rexysaur.void_.Client.util.SaveManager;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -195,6 +196,8 @@ import net.minecraft.world.storage.WorldInfo;
 
 public class Minecraft implements IThreadListener, IPlayerUsage
 {
+	public static GameConfiguration gameConfig;
+	
     private static final Logger logger = LogManager.getLogger();
     private static final ResourceLocation locationMojangPng = new ResourceLocation("textures/gui/title/mojang.png");
     public static final boolean isRunningOnMac = Util.getOSType() == Util.EnumOS.OSX;
@@ -237,7 +240,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     private Entity renderViewEntity;
     public Entity pointedEntity;
     public EffectRenderer effectRenderer;
-    private Session session;
+    public static Session session;
     private boolean isGamePaused;
 
     /** The font renderer used for displaying and measuring text */
@@ -329,7 +332,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     private SoundHandler mcSoundHandler;
     private MusicTicker mcMusicTicker;
     private ResourceLocation mojangLogo;
-    private MinecraftSessionService sessionService;
+    public static MinecraftSessionService sessionService;
     private SkinManager skinManager;
     private final Queue < FutureTask<? >> scheduledTasks = Queues. < FutureTask<? >> newArrayDeque();
     private long field_175615_aJ = 0L;
@@ -366,6 +369,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     public Minecraft(GameConfiguration gameConfig)
     {
         theMinecraft = this;
+        Minecraft.gameConfig = gameConfig;
         this.mcDataDir = gameConfig.folderInfo.mcDataDir;
         this.fileAssets = gameConfig.folderInfo.assetsDir;
         this.fileResourcepacks = gameConfig.folderInfo.resourcePacksDir;
@@ -376,23 +380,15 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.proxy = gameConfig.userInfo.proxy == null ? Proxy.NO_PROXY : gameConfig.userInfo.proxy;
         
         this.sessionService = (new YggdrasilAuthenticationService(gameConfig.userInfo.proxy, UUID.randomUUID().toString())).createMinecraftSessionService();
-        this.session = gameConfig.userInfo.session; 
+        this.session = gameConfig.userInfo.session;
         
-        if (Client.DEBUG)
-        {
-            String clientToken = UUID.randomUUID().toString();
-            this.sessionService = (new YggdrasilAuthenticationService(gameConfig.userInfo.proxy, clientToken)).createMinecraftSessionService();
-            
-            try {
-                this.session = MinecraftLogin.login("chowdhury_shafi@hotmail.com","Mikael2007!");
-	    	} catch (Exception e) {
-	    	    System.out.println("Login Failed");
-	    	    e.printStackTrace();
-	    	}
-        }
+        String[] creds = SaveManager.getCredentials();
         
-        logger.info("Setting user: " + this.session.getUsername());
-        logger.info("(Session ID is " + this.session.getSessionID() + ")");
+        String username = creds[0];
+        String password = creds[1];
+        
+        ClientLogin.login(username, password);
+
         this.isDemo = gameConfig.gameInfo.isDemo;
         this.displayWidth = gameConfig.displayInfo.width > 0 ? gameConfig.displayInfo.width : 1;
         this.displayHeight = gameConfig.displayInfo.height > 0 ? gameConfig.displayInfo.height : 1;
@@ -1000,12 +996,6 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         else if (guiScreenIn == null && this.thePlayer.getHealth() <= 0.0F)
         {
             guiScreenIn = new GuiGameOver();
-        }
-
-        if (guiScreenIn instanceof ClientMainMenu);
-        {
-            this.gameSettings.showDebugInfo = false;
-            this.ingameGUI.getChatGUI().clearChatMessages();
         }
 
         this.currentScreen = (GuiScreen)guiScreenIn;
