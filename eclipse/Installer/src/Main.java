@@ -10,8 +10,8 @@ public class Main {
 	{
 		String path = Main.getAppdataFolder() + File.separator + ".minecraft" + File.separator + "versions" + File.separator + "Void" + File.separator;
 		
-		File jar = new File(path + "Void.jar");
-		File json = new File(path + "Void.json");
+		File jar = new File(path + "Void Client.jar");
+		File json = new File(path + "Void Client.json");
 		
 		FileUtils.copyURLToFile(new URL("https://github.com/darkboat/Void-Client/raw/master/Export/Void Client/Void Client.jar"), jar);
 		FileUtils.copyURLToFile(new URL("https://raw.githubusercontent.com/darkboat/Void-Client/master/Export/Void Client/Void Client.json"), json);
