@@ -83,11 +83,6 @@ public abstract class EntityTameable extends EntityAnimal implements IEntityOwna
     {
         EnumParticleTypes enumparticletypes = EnumParticleTypes.HEART;
 
-        if (!play)
-        {
-            enumparticletypes = EnumParticleTypes.SMOKE_NORMAL;
-        }
-
         for (int i = 0; i < 7; ++i)
         {
             double d0 = this.rand.nextGaussian() * 0.02D;

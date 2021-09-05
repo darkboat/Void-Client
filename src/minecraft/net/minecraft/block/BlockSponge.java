@@ -195,8 +195,6 @@ public class BlockSponge extends Block
                         }
                     }
                 }
-
-                worldIn.spawnParticle(EnumParticleTypes.DRIP_WATER, d0, d1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
             }
         }
     }

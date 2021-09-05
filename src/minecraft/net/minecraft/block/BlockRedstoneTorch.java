@@ -127,16 +127,6 @@ public class BlockRedstoneTorch extends BlockTorch
 
                 if (this.isBurnedOut(worldIn, pos, true))
                 {
-                    worldIn.playSoundEffect((double)((float)pos.getX() + 0.5F), (double)((float)pos.getY() + 0.5F), (double)((float)pos.getZ() + 0.5F), "random.fizz", 0.5F, 2.6F + (worldIn.rand.nextFloat() - worldIn.rand.nextFloat()) * 0.8F);
-
-                    for (int i = 0; i < 5; ++i)
-                    {
-                        double d0 = (double)pos.getX() + rand.nextDouble() * 0.6D + 0.2D;
-                        double d1 = (double)pos.getY() + rand.nextDouble() * 0.6D + 0.2D;
-                        double d2 = (double)pos.getZ() + rand.nextDouble() * 0.6D + 0.2D;
-                        worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0, d1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
-                    }
-
                     worldIn.scheduleUpdate(pos, worldIn.getBlockState(pos).getBlock(), 160);
                 }
             }

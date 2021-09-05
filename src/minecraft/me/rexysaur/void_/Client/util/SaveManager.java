@@ -40,6 +40,7 @@ public class SaveManager {
 	{
 		Option crosshairColour = new Option("CrosshairColour", GameSettings.Crosshair_Colours[Client.INSTANCE.hudmanager.crosshair.currentCol]);
 		Option EnchantGlint = new Option("EnchantGlint", Client.INSTANCE.modmanager.enchantglint.getColor());
+		Option skyblockSniper = new Option("SkyblockSniper", Client.INSTANCE.addonmanager.skyblockSniper);
 
 		// Keystrokes
 		Option KeystrokesKeyPressed = new Option("KeystrokesKeyPressed", Client.INSTANCE.hudmanager.KeyStrokes.keyColorPressed);

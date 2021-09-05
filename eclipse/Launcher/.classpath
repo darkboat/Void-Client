@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_301"/>
+	<classpathentry kind="lib" path="C:/Users/mikae/Desktop/void 2.0/jars/libraries/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mikae/Desktop/void 2.0/jars/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mikae/Desktop/void 2.0/jars/libraries/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

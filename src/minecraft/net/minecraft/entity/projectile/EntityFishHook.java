@@ -392,33 +392,7 @@ public class EntityFishHook extends Entity
                             this.motionY -= 0.20000000298023224D;
                             this.playSound("random.splash", 0.25F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.4F);
                             float f8 = (float)MathHelper.floor_double(this.getEntityBoundingBox().minY);
-                            worldserver.spawnParticle(EnumParticleTypes.WATER_BUBBLE, this.posX, (double)(f8 + 1.0F), this.posZ, (int)(1.0F + this.width * 20.0F), (double)this.width, 0.0D, (double)this.width, 0.20000000298023224D, new int[0]);
-                            worldserver.spawnParticle(EnumParticleTypes.WATER_WAKE, this.posX, (double)(f8 + 1.0F), this.posZ, (int)(1.0F + this.width * 20.0F), (double)this.width, 0.0D, (double)this.width, 0.20000000298023224D, new int[0]);
                             this.ticksCatchable = MathHelper.getRandomIntegerInRange(this.rand, 10, 30);
-                        }
-                        else
-                        {
-                            this.fishApproachAngle = (float)((double)this.fishApproachAngle + this.rand.nextGaussian() * 4.0D);
-                            float f7 = this.fishApproachAngle * 0.017453292F;
-                            float f10 = MathHelper.sin(f7);
-                            float f11 = MathHelper.cos(f7);
-                            double d13 = this.posX + (double)(f10 * (float)this.ticksCatchableDelay * 0.1F);
-                            double d15 = (double)((float)MathHelper.floor_double(this.getEntityBoundingBox().minY) + 1.0F);
-                            double d16 = this.posZ + (double)(f11 * (float)this.ticksCatchableDelay * 0.1F);
-                            Block block1 = worldserver.getBlockState(new BlockPos((int)d13, (int)d15 - 1, (int)d16)).getBlock();
-
-                            if (block1 == Blocks.water || block1 == Blocks.flowing_water)
-                            {
-                                if (this.rand.nextFloat() < 0.15F)
-                                {
-                                    worldserver.spawnParticle(EnumParticleTypes.WATER_BUBBLE, d13, d15 - 0.10000000149011612D, d16, 1, (double)f10, 0.1D, (double)f11, 0.0D, new int[0]);
-                                }
-
-                                float f3 = f10 * 0.04F;
-                                float f4 = f11 * 0.04F;
-                                worldserver.spawnParticle(EnumParticleTypes.WATER_WAKE, d13, d15, d16, 0, (double)f4, 0.01D, (double)(-f3), 1.0D, new int[0]);
-                                worldserver.spawnParticle(EnumParticleTypes.WATER_WAKE, d13, d15, d16, 0, (double)(-f4), 0.01D, (double)f3, 1.0D, new int[0]);
-                            }
                         }
                     }
                     else if (this.ticksCaughtDelay > 0)
@@ -437,21 +411,6 @@ public class EntityFishHook extends Entity
                         else if (this.ticksCaughtDelay < 60)
                         {
                             f1 = (float)((double)f1 + (double)(60 - this.ticksCaughtDelay) * 0.01D);
-                        }
-
-                        if (this.rand.nextFloat() < f1)
-                        {
-                            float f9 = MathHelper.randomFloatClamp(this.rand, 0.0F, 360.0F) * 0.017453292F;
-                            float f2 = MathHelper.randomFloatClamp(this.rand, 25.0F, 60.0F);
-                            double d12 = this.posX + (double)(MathHelper.sin(f9) * f2 * 0.1F);
-                            double d14 = (double)((float)MathHelper.floor_double(this.getEntityBoundingBox().minY) + 1.0F);
-                            double d6 = this.posZ + (double)(MathHelper.cos(f9) * f2 * 0.1F);
-                            Block block = worldserver.getBlockState(new BlockPos((int)d12, (int)d14 - 1, (int)d6)).getBlock();
-
-                            if (block == Blocks.water || block == Blocks.flowing_water)
-                            {
-                                worldserver.spawnParticle(EnumParticleTypes.WATER_SPLASH, d12, d14, d6, 2 + this.rand.nextInt(2), 0.10000000149011612D, 0.0D, 0.10000000149011612D, 0.0D, new int[0]);
-                            }
                         }
 
                         if (this.ticksCaughtDelay <= 0)

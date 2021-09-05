@@ -88,7 +88,6 @@ public class EntityTNTPrimed extends Entity
         else
         {
             this.handleWaterMovement();
-            this.worldObj.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, this.posX, this.posY + 0.5D, this.posZ, 0.0D, 0.0D, 0.0D, new int[0]);
         }
     }
 

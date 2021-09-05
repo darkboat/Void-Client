@@ -211,7 +211,6 @@ public class EntityWither extends EntityMob implements IBossDisplayData, IRanged
             double d10 = this.func_82214_u(l);
             double d2 = this.func_82208_v(l);
             double d4 = this.func_82213_w(l);
-            this.worldObj.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d10 + this.rand.nextGaussian() * 0.30000001192092896D, d2 + this.rand.nextGaussian() * 0.30000001192092896D, d4 + this.rand.nextGaussian() * 0.30000001192092896D, 0.0D, 0.0D, 0.0D, new int[0]);
 
             if (flag && this.worldObj.rand.nextInt(4) == 0)
             {

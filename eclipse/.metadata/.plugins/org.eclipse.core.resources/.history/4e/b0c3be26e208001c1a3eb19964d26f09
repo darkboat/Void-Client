@@ -1,8 +1,0 @@
-package me.rexysaur.void_.Client.util;
-
-public class File {
-	public static String Read(String file)
-	{
-		
-	}
-}

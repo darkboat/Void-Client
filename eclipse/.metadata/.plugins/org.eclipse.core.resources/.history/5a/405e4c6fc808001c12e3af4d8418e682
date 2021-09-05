@@ -1,9 +1,0 @@
-package me.rexysaur.void_.Client.Session;
-
-class MinecraftLogin
-{
-	public void login()
-	{
-		
-	}
-}

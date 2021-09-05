@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.util.Session"/>
-    <fullyQualifiedTypeName name="java.util.UUID"/>
-    <fullyQualifiedTypeName name="com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.main.GameConfiguration"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.main.GameConfiguration.UserInformation"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
-    <fullyQualifiedTypeName name="java.net.Proxy"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.File_"/>
-    <fullyQualifiedTypeName name="jdk.nashorn.internal.runtime.regexp.joni.Regex"/>
-    <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Callable"/>
     <fullyQualifiedTypeName name="java.util.Timer"/>
     <fullyQualifiedTypeName name="java.util.TimerTask"/>
@@ -22,8 +11,6 @@
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Background"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
     <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
-    <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent.Serializer"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.FrameBuffer"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.UserInfo"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.Stream"/>
@@ -41,7 +28,6 @@
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.cosmetics.HatManager"/>
     <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.FileExplorer"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
@@ -53,11 +39,25 @@
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.CrosshairColours"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.hud.mod.impl.Crosshair"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.SaveManager"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursKey"/>
     <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
     <fullyQualifiedTypeName name="org.apache.commons.lang3.ArrayUtils"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.KeystrokesColoursLetter"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Auction.Root"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.ChatComponentText"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.ChatComponentSelector"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent.Serializer"/>
+    <fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
+    <fullyQualifiedTypeName name="optifine.json.JSONValue"/>
+    <fullyQualifiedTypeName name="optifine.json.JSONArray"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+    <fullyQualifiedTypeName name="optifine.json.JSONObject"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.impl.ClientTick"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.SaveManager"/>
 </qualifiedTypeNameHistroy>

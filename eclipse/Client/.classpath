@@ -25,7 +25,7 @@
 	<classpathentry kind="lib" path="jars/libraries/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar"/>
-	<classpathentry kind="lib" path="jars/libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" sourcepath="jars/libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/mojang/authlib/1.5.21/authlib-1.5.21.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/mojang/realms/1.7.39/realms-1.7.39.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar"/>

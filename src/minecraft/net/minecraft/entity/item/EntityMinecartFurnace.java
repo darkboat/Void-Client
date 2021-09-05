@@ -59,11 +59,6 @@ public class EntityMinecartFurnace extends EntityMinecart
         }
 
         this.setMinecartPowered(this.fuel > 0);
-
-        if (this.isMinecartPowered() && this.rand.nextInt(4) == 0)
-        {
-            this.worldObj.spawnParticle(EnumParticleTypes.SMOKE_LARGE, this.posX, this.posY + 0.8D, this.posZ, 0.0D, 0.0D, 0.0D, new int[0]);
-        }
     }
 
     /**

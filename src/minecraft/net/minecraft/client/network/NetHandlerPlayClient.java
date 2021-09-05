@@ -1911,6 +1911,11 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         PacketThreadUtil.checkThreadAndEnqueue(packetIn, this, this.gameController);
         Scoreboard scoreboard = this.clientWorldController.getScoreboard();
         ScoreObjective scoreobjective = scoreboard.getObjective(packetIn.getObjectiveName());
+        
+        if(packetIn.getPlayerName() == Minecraft.getMinecraft().thePlayer.getDisplayName().toString())
+        {
+        	System.err.println(scoreobjective.getName());        	
+        }
 
         if (packetIn.getScoreAction() == S3CPacketUpdateScore.Action.CHANGE)
         {
@@ -1936,6 +1941,7 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
      */
     public void handleDisplayScoreboard(S3DPacketDisplayScoreboard packetIn)
     {
+    	System.err.println(packetIn.func_149370_d());
         PacketThreadUtil.checkThreadAndEnqueue(packetIn, this, this.gameController);
         Scoreboard scoreboard = this.clientWorldController.getScoreboard();
 

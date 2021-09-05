@@ -2261,7 +2261,6 @@ public class RenderGlobal implements IWorldAccess, IResourceManagerReloadListene
                     double d8 = (double)l * d20 + random.nextGaussian() * 0.01D;
                     double d10 = -0.03D + random.nextGaussian() * 0.01D;
                     double d12 = (double)i * d20 + random.nextGaussian() * 0.01D;
-                    this.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d21, d4, d6, d8, d10, d12, new int[0]);
                 }
 
                 return;
@@ -2342,7 +2341,6 @@ public class RenderGlobal implements IWorldAccess, IResourceManagerReloadListene
                     double d3 = (double)blockPosIn.getX() + 0.5D + ((double)this.theWorld.rand.nextFloat() - 0.5D) * 2.0D;
                     double d5 = (double)blockPosIn.getY() + 0.5D + ((double)this.theWorld.rand.nextFloat() - 0.5D) * 2.0D;
                     double d7 = (double)blockPosIn.getZ() + 0.5D + ((double)this.theWorld.rand.nextFloat() - 0.5D) * 2.0D;
-                    this.theWorld.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d3, d5, d7, 0.0D, 0.0D, 0.0D, new int[0]);
                     this.theWorld.spawnParticle(EnumParticleTypes.FLAME, d3, d5, d7, 0.0D, 0.0D, 0.0D, new int[0]);
                 }
 

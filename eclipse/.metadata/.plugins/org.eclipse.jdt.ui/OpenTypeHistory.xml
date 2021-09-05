@@ -9,10 +9,12 @@
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiVideoSettings.java[GuiVideoSettings" modifiers="1" timestamp="1630219666226"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.network.play.server{S42PacketCombatEvent.java[S42PacketCombatEvent[Event" modifiers="16393" timestamp="1630219669654"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.entity.player{EntityPlayerMP.java[EntityPlayerMP" modifiers="1" timestamp="1630340460677"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.settings{GameSettings.java[GameSettings" modifiers="1" timestamp="1630701175091"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.renderer.entity{RenderPlayer.java[RenderPlayer" modifiers="1" timestamp="1630509898035"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.util{ResourceLocation.java[ResourceLocation" modifiers="1" timestamp="1630595185317"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.network{Packet.java[Packet" modifiers="513" timestamp="1630219669262"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiChat.java[GuiChat" modifiers="1" timestamp="1630219666040"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client{Minecraft.java[Minecraft" modifiers="1" timestamp="1630420970105"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client{Minecraft.java[Minecraft" modifiers="1" timestamp="1630781223185"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiChat.java[GuiChat" modifiers="1" timestamp="1630757874216"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.settings{GameSettings.java[GameSettings" modifiers="1" timestamp="1630834791662"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.renderer.entity{RenderPlayer.java[RenderPlayer" modifiers="1" timestamp="1630853809428"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.particle{EntityDropParticleFX.java[EntityDropParticleFX[WaterFactory" modifiers="9" timestamp="1630854873301"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.particle{EntityBreakingFX.java[EntityBreakingFX" modifiers="1" timestamp="1630219666542"/>
 </typeInfoHistroy>

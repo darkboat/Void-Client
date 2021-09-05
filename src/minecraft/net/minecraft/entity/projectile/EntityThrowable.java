@@ -268,17 +268,6 @@ public abstract class EntityThrowable extends Entity implements IProjectile
         float f2 = 0.99F;
         float f3 = this.getGravityVelocity();
 
-        if (this.isInWater())
-        {
-            for (int i = 0; i < 4; ++i)
-            {
-                float f4 = 0.25F;
-                this.worldObj.spawnParticle(EnumParticleTypes.WATER_BUBBLE, this.posX - this.motionX * (double)f4, this.posY - this.motionY * (double)f4, this.posZ - this.motionZ * (double)f4, this.motionX, this.motionY, this.motionZ, new int[0]);
-            }
-
-            f2 = 0.8F;
-        }
-
         this.motionX *= (double)f2;
         this.motionY *= (double)f2;
         this.motionZ *= (double)f2;

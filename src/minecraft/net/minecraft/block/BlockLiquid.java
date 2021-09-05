@@ -246,43 +246,6 @@ public abstract class BlockLiquid extends Block
             }
         }
 
-        if (this.blockMaterial == Material.lava && worldIn.getBlockState(pos.up()).getBlock().getMaterial() == Material.air && !worldIn.getBlockState(pos.up()).getBlock().isOpaqueCube())
-        {
-            if (rand.nextInt(100) == 0)
-            {
-                double d8 = d0 + (double)rand.nextFloat();
-                double d4 = d1 + this.maxY;
-                double d6 = d2 + (double)rand.nextFloat();
-                worldIn.spawnParticle(EnumParticleTypes.LAVA, d8, d4, d6, 0.0D, 0.0D, 0.0D, new int[0]);
-                worldIn.playSound(d8, d4, d6, "liquid.lavapop", 0.2F + rand.nextFloat() * 0.2F, 0.9F + rand.nextFloat() * 0.15F, false);
-            }
-
-            if (rand.nextInt(200) == 0)
-            {
-                worldIn.playSound(d0, d1, d2, "liquid.lava", 0.2F + rand.nextFloat() * 0.2F, 0.9F + rand.nextFloat() * 0.15F, false);
-            }
-        }
-
-        if (rand.nextInt(10) == 0 && World.doesBlockHaveSolidTopSurface(worldIn, pos.down()))
-        {
-            Material material = worldIn.getBlockState(pos.down(2)).getBlock().getMaterial();
-
-            if (!material.blocksMovement() && !material.isLiquid())
-            {
-                double d3 = d0 + (double)rand.nextFloat();
-                double d5 = d1 - 1.05D;
-                double d7 = d2 + (double)rand.nextFloat();
-
-                if (this.blockMaterial == Material.water)
-                {
-                    worldIn.spawnParticle(EnumParticleTypes.DRIP_WATER, d3, d5, d7, 0.0D, 0.0D, 0.0D, new int[0]);
-                }
-                else
-                {
-                    worldIn.spawnParticle(EnumParticleTypes.DRIP_LAVA, d3, d5, d7, 0.0D, 0.0D, 0.0D, new int[0]);
-                }
-            }
-        }
     }
 
     public static double getFlowDirection(IBlockAccess worldIn, BlockPos pos, Material materialIn)
@@ -344,15 +307,6 @@ public abstract class BlockLiquid extends Block
 
     protected void triggerMixEffects(World worldIn, BlockPos pos)
     {
-        double d0 = (double)pos.getX();
-        double d1 = (double)pos.getY();
-        double d2 = (double)pos.getZ();
-        worldIn.playSoundEffect(d0 + 0.5D, d1 + 0.5D, d2 + 0.5D, "random.fizz", 0.5F, 2.6F + (worldIn.rand.nextFloat() - worldIn.rand.nextFloat()) * 0.8F);
-
-        for (int i = 0; i < 8; ++i)
-        {
-            worldIn.spawnParticle(EnumParticleTypes.SMOKE_LARGE, d0 + Math.random(), d1 + 1.2D, d2 + Math.random(), 0.0D, 0.0D, 0.0D, new int[0]);
-        }
     }
 
     /**

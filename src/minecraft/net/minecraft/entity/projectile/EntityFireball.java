@@ -205,7 +205,6 @@ public abstract class EntityFireball extends Entity
                 for (int j = 0; j < 4; ++j)
                 {
                     float f3 = 0.25F;
-                    this.worldObj.spawnParticle(EnumParticleTypes.WATER_BUBBLE, this.posX - this.motionX * (double)f3, this.posY - this.motionY * (double)f3, this.posZ - this.motionZ * (double)f3, this.motionX, this.motionY, this.motionZ, new int[0]);
                 }
 
                 f2 = 0.8F;
@@ -217,7 +216,6 @@ public abstract class EntityFireball extends Entity
             this.motionX *= (double)f2;
             this.motionY *= (double)f2;
             this.motionZ *= (double)f2;
-            this.worldObj.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, this.posX, this.posY + 0.5D, this.posZ, 0.0D, 0.0D, 0.0D, new int[0]);
             this.setPosition(this.posX, this.posY, this.posZ);
         }
         else

@@ -233,11 +233,6 @@ public class BlockSkull extends BlockContainer
 
                 worldIn.spawnEntityInWorld(entitywither);
 
-                for (int l = 0; l < 120; ++l)
-                {
-                    worldIn.spawnParticle(EnumParticleTypes.SNOWBALL, (double)blockpos.getX() + worldIn.rand.nextDouble(), (double)(blockpos.getY() - 2) + worldIn.rand.nextDouble() * 3.9D, (double)blockpos.getZ() + worldIn.rand.nextDouble(), 0.0D, 0.0D, 0.0D, new int[0]);
-                }
-
                 for (int i1 = 0; i1 < blockpattern.getPalmLength(); ++i1)
                 {
                     for (int j1 = 0; j1 < blockpattern.getThumbLength(); ++j1)

@@ -23,7 +23,7 @@ public class VoidClientOptions extends GuiScreen {
 	private final int increment = 40;
 	private final int done_distance = 75;
     
-    private static final GameSettings.Options[] videoOptions = new GameSettings.Options[] {GameSettings.Options.SHOW_FPS};
+    private static final GameSettings.Options[] videoOptions = new GameSettings.Options[] {GameSettings.Options.SHOW_FPS, GameSettings.Options.SKYBLOCK_SNIPER};
 
     public VoidClientOptions(GuiScreen parentScreenIn, GameSettings gameSettingsIn)
     {

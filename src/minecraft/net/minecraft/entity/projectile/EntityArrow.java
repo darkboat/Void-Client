@@ -435,7 +435,6 @@ public class EntityArrow extends Entity implements IProjectile
                 for (int i1 = 0; i1 < 4; ++i1)
                 {
                     float f8 = 0.25F;
-                    this.worldObj.spawnParticle(EnumParticleTypes.WATER_BUBBLE, this.posX - this.motionX * (double)f8, this.posY - this.motionY * (double)f8, this.posZ - this.motionZ * (double)f8, this.motionX, this.motionY, this.motionZ, new int[0]);
                 }
 
                 f4 = 0.6F;

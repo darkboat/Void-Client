@@ -1,0 +1,366 @@
+[
+  {
+    "name": "Livid Dagger",
+    "price": 7100000
+  },
+  {
+    "name": "Bonzo's Staff",
+    "price": 3000000
+  },
+  {
+    "name": "Spirit Sceptre",
+    "price": 9800000
+  },
+  {
+    "name": "Ice Spray Wand",
+    "price": 25000000
+  },
+  {
+    "name": "Shadow Fury",
+    "price": 18900000
+  },
+  {
+    "name": "Flower of Truth",
+    "price": 3000000
+  },
+  {
+    "name": "Wither Cloak Sword",
+    "price": 4100000
+  },
+  {
+    "name": "Necromancer Sword",
+    "price": 9000000
+  },
+  {
+    "name": "Giant's Sword",
+    "price": 130000000
+  },
+  {
+    "name": "Aspect of the Void",
+    "price": 12000000
+  },
+  {
+    "name": "Reaper Falchion",
+    "price": 4000000
+  },
+  {
+    "name": "Vorpal Katana",
+    "price": 6000000
+  },
+  {
+    "name": "Axe of the Shredded",
+    "price": 60000000
+  },
+  {
+    "name": "Soul Whip",
+    "price": 8000000
+  },
+  {
+    "name": "Yeti Sword",
+    "price": 45000000
+  },
+  {
+    "name": "Daedalus Axe",
+    "price": 28500000
+  },
+  {
+    "name": "Atomsplit Katana",
+    "price": 115000000
+  },
+  {
+    "name": "Hyperion",
+    "price": 580000000
+  },
+  {
+    "name": "Astraea",
+    "price": 580000000
+  },
+  {
+    "name": "Scylla",
+    "price": 580000000
+  },
+  {
+    "name": "Valkyrie",
+    "price": 580000000
+  },
+  {
+    "name": "Frozen Scythe",
+    "price": 6400000
+  },
+  {
+    "name": "Voidedge Katana",
+    "price": 1000000
+  },
+  {
+    "name": "Scorpion Bow",
+    "price": 2800000
+  },
+  {
+    "name": "Death Bow",
+    "price": 2300000
+  },
+  {
+    "name": "Juju Shortbow",
+    "price": 24500000
+  },
+  {
+    "name": "Mosquito Bow",
+    "price": 6800000
+  },
+  {
+    "name": "Bonemerang",
+    "price": 3400000
+  },
+  {
+    "name": "Last Breath",
+    "price": 4800000
+  },
+  {
+    "name": "Terminator",
+    "price": 780000000
+  },
+  {
+    "name": "Shadow Assassin Boots",
+    "price": 1190000
+  },
+  {
+    "name": "Shadow Assassin Helmet",
+    "price": 1800000
+  },
+  {
+    "name": "Shadow Assassin Leggings",
+    "price": 4000000
+  },
+  {
+    "name": "Shadow Assassin Chesplate",
+    "price": 23000000
+  },
+  {
+    "name": "Storm's Boots",
+    "price": 2600000
+  },
+  {
+    "name": "Storm's Helmet",
+    "price": 2800000
+  },
+  {
+    "name": "Storm's Leggings",
+    "price": 7100000
+  },
+  {
+    "name": "Storm's Chestplate",
+    "price": 21400000
+  },
+  {
+    "name": "Goldor's Boots",
+    "price": 2000000
+  },
+  {
+    "name": "Goldor's Helmet",
+    "price": 2800000
+  },
+  {
+    "name": "Goldor's Leggings",
+    "price": 6400000
+  },
+  {
+    "name": "Goldor's Chestplate",
+    "price": 20800000
+  },
+  {
+    "name": "Necron's Boots",
+    "price": 12000000
+  },
+  {
+    "name": "Necron's Helmet",
+    "price": 12700000
+  },
+  {
+    "name": "Necron's Leggings",
+    "price": 17200000
+  },
+  {
+    "name": "Necron's Chesplate",
+    "price": 30000000
+  },
+  {
+    "name": "Maxor Helmet",
+    "price": 2700000
+  },
+  {
+    "name": "Maxor Leggings",
+    "price": 6600000
+  },
+  {
+    "name": "Maxor Chestplate",
+    "price": 26000000
+  },
+  {
+    "name": "Maxor Boots",
+    "price": 1800000
+  },
+  {
+    "name": "Wither Boots",
+    "price": 1200000
+  },
+  {
+    "name": "Wither Helmet",
+    "price": 2390000
+  },
+  {
+    "name": "Wither Leggings",
+    "price": 5950000
+  },
+  {
+    "name": "Wither Chesplate",
+    "price": 19300000
+  },
+  {
+    "name": "Superior Dragon Boots",
+    "price": 5250000
+  },
+  {
+    "name": "Superior Dragon Helmet",
+    "price": 6900000
+  },
+  {
+    "name": "Superior Dragon Leggings",
+    "price": 9300000
+  },
+  {
+    "name": "Superior Dragon Chestplate",
+    "price": 9300000
+  },
+  {
+    "name": "Necromancer Lord Helmet",
+    "price": 370000
+  },
+  {
+    "name": "Necromancer Lord Boots",
+    "price": 900000
+  },
+  {
+    "name": "Necromancer Lord Boots",
+    "price": 900000
+  },
+  {
+    "name": "Necromancer Lord Leggings",
+    "price": 3500000
+  },
+  {
+    "name": "Necromancer Lord Chestplate",
+    "price": 9900000
+  },
+  {
+    "name": "Sorrow Boots",
+    "price": 4500000
+  },
+  {
+    "name": "Sorrow Helmet",
+    "price": 6000000
+  },
+  {
+    "name": "Sorrow Leggings",
+    "price": 7500000
+  },
+  {
+    "name": "Sorrow Chesplate",
+    "price": 9000000
+  },
+  {
+    "name": "Perfect Boots - Tier XII",
+    "price": 7000000
+  },
+  {
+    "name": " Perfect Helmet - Tier XII",
+    "price": 7300000
+  },
+  {
+    "name": "Perfect Leggings - Tier XII",
+    "price": 8700000
+  },
+  {
+    "name": "Perfect Chestplate - Tier XII",
+    "price": 7400000
+  },
+  {
+    "name": "Final Destanation Boots",
+    "price": 1150000
+  },
+  {
+    "name": "Final Destanation Helmet",
+    "price": 1200000
+  },
+  {
+    "name": "Final Destination Chesplate",
+    "price": 1450000
+  },
+  {
+    "name": "Final Destination Leggings",
+    "price": 1750000
+  },
+  {
+    "name": "Frozen Blaze Helmet",
+    "price": 8500000
+  },
+  {
+    "name": "Frozen Blaze Chestplate",
+    "price": 8900000
+  },
+  {
+    "name": "Frozen Blaze Boots",
+    "price": 9000000
+  },
+  {
+    "name": "Reaper Leggings",
+    "price": 8400000
+  },
+  {
+    "name": "Reaper Boots",
+    "price": 9000000
+  },
+  {
+    "name": "Reaper Mask",
+    "price": 10500000
+  },
+  {
+    "name": "Reaper Chesplate",
+    "price": 10700000
+  },
+  {
+    "name": "Leggings Of Divan",
+    "price": 33000000
+  },
+  {
+    "name": "Wither Goggles",
+    "price": 5200000
+  },
+  {
+    "name": "Spirit Boots",
+    "price": 4550000
+  },
+  {
+    "name": "Chestplate Of Divan",
+    "price": 33900000
+  },
+  {
+    "name": "Helmet Of Divan",
+    "price": 34300000
+  },
+  {
+    "name": "Boots Of Divan",
+    "price": 37500000
+  },
+  {
+    "name": "Precursor Eye",
+    "price": 28000000
+  },
+  {
+    "name": "Warden Helmet",
+    "price": 257000000
+  },
+  {
+    "name": "Rogue Sword",
+    "price": 10000
+  }
+]

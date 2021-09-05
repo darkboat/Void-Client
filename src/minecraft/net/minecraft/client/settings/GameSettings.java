@@ -610,7 +610,11 @@ public class GameSettings
         {
         	Client.INSTANCE.hudmanager.crosshair.isShadow = !Client.INSTANCE.hudmanager.crosshair.isShadow;
         }
-        	
+        if (p_74306_1_ == GameSettings.Options.SKYBLOCK_SNIPER)
+        {
+        	Client.INSTANCE.addonmanager.skyblockSniper.toggle();
+        }
+
         this.saveOptions();
     }
 
@@ -686,6 +690,9 @@ public class GameSettings
             	
             case CROSSHAIR_SHADOW:
             	return Client.INSTANCE.hudmanager.crosshair.isShadow;
+            	
+            case SKYBLOCK_SNIPER:
+            	return Client.INSTANCE.addonmanager.skyblockSniper.isEnabled;
 
             default:
                 return false;
@@ -1429,7 +1436,10 @@ public class GameSettings
     	KEYSTROKES_KEY_PRESSED_COLOUR("Key Pressed", false, false),
     	
     	KEYSTROKES_LETTER_STATIC_COLOUR("Letter Default", false, false),
-    	KEYSTROKES_LETTER_PRESSED_COLOUR("Letter Pressed", false, false);
+    	KEYSTROKES_LETTER_PRESSED_COLOUR("Letter Pressed", false, false),
+    	
+    	// Skyblock Addons
+    	SKYBLOCK_SNIPER("Skyblock Sniper", false, true);
 
         private final boolean enumFloat;
         private final boolean enumBoolean;

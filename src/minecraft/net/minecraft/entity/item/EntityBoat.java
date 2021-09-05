@@ -262,31 +262,6 @@ public class EntityBoat extends Entity
 
         double d9 = Math.sqrt(this.motionX * this.motionX + this.motionZ * this.motionZ);
 
-        if (d9 > 0.2975D)
-        {
-            double d2 = Math.cos((double)this.rotationYaw * Math.PI / 180.0D);
-            double d4 = Math.sin((double)this.rotationYaw * Math.PI / 180.0D);
-
-            for (int k = 0; (double)k < 1.0D + d9 * 60.0D; ++k)
-            {
-                double d5 = (double)(this.rand.nextFloat() * 2.0F - 1.0F);
-                double d6 = (double)(this.rand.nextInt(2) * 2 - 1) * 0.7D;
-
-                if (this.rand.nextBoolean())
-                {
-                    double d7 = this.posX - d2 * d5 * 0.8D + d4 * d6;
-                    double d8 = this.posZ - d4 * d5 * 0.8D - d2 * d6;
-                    this.worldObj.spawnParticle(EnumParticleTypes.WATER_SPLASH, d7, this.posY - 0.125D, d8, this.motionX, this.motionY, this.motionZ, new int[0]);
-                }
-                else
-                {
-                    double d24 = this.posX + d2 + d4 * d5 * 0.7D;
-                    double d25 = this.posZ + d4 - d2 * d5 * 0.7D;
-                    this.worldObj.spawnParticle(EnumParticleTypes.WATER_SPLASH, d24, this.posY - 0.125D, d25, this.motionX, this.motionY, this.motionZ, new int[0]);
-                }
-            }
-        }
-
         if (this.worldObj.isRemote && this.isBoatEmpty)
         {
             if (this.boatPosRotationIncrements > 0)

@@ -1138,14 +1138,12 @@ public abstract class Entity implements ICommandSender
         {
             float f2 = (this.rand.nextFloat() * 2.0F - 1.0F) * this.width;
             float f3 = (this.rand.nextFloat() * 2.0F - 1.0F) * this.width;
-            this.worldObj.spawnParticle(EnumParticleTypes.WATER_BUBBLE, this.posX + (double)f2, (double)(f1 + 1.0F), this.posZ + (double)f3, this.motionX, this.motionY - (double)(this.rand.nextFloat() * 0.2F), this.motionZ, new int[0]);
         }
 
         for (int j = 0; (float)j < 1.0F + this.width * 20.0F; ++j)
         {
             float f4 = (this.rand.nextFloat() * 2.0F - 1.0F) * this.width;
             float f5 = (this.rand.nextFloat() * 2.0F - 1.0F) * this.width;
-            this.worldObj.spawnParticle(EnumParticleTypes.WATER_SPLASH, this.posX + (double)f4, (double)(f1 + 1.0F), this.posZ + (double)f5, this.motionX, this.motionY, this.motionZ, new int[0]);
         }
     }
 

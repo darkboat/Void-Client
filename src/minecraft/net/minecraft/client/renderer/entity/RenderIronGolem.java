@@ -2,7 +2,6 @@ package net.minecraft.client.renderer.entity;
 
 import net.minecraft.client.model.ModelIronGolem;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.layers.LayerIronGolemFlower;
 import net.minecraft.entity.monster.EntityIronGolem;
 import net.minecraft.util.ResourceLocation;
 
@@ -13,7 +12,6 @@ public class RenderIronGolem extends RenderLiving<EntityIronGolem>
     public RenderIronGolem(RenderManager renderManagerIn)
     {
         super(renderManagerIn, new ModelIronGolem(), 0.5F);
-        this.addLayer(new LayerIronGolemFlower(this));
     }
 
     /**

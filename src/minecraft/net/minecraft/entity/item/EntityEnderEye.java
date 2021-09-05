@@ -167,18 +167,6 @@ public class EntityEnderEye extends Entity
 
         float f3 = 0.25F;
 
-        if (this.isInWater())
-        {
-            for (int i = 0; i < 4; ++i)
-            {
-                this.worldObj.spawnParticle(EnumParticleTypes.WATER_BUBBLE, this.posX - this.motionX * (double)f3, this.posY - this.motionY * (double)f3, this.posZ - this.motionZ * (double)f3, this.motionX, this.motionY, this.motionZ, new int[0]);
-            }
-        }
-        else
-        {
-            this.worldObj.spawnParticle(EnumParticleTypes.PORTAL, this.posX - this.motionX * (double)f3 + this.rand.nextDouble() * 0.6D - 0.3D, this.posY - this.motionY * (double)f3 - 0.5D, this.posZ - this.motionZ * (double)f3 + this.rand.nextDouble() * 0.6D - 0.3D, this.motionX, this.motionY, this.motionZ, new int[0]);
-        }
-
         if (!this.worldObj.isRemote)
         {
             this.setPosition(this.posX, this.posY, this.posZ);

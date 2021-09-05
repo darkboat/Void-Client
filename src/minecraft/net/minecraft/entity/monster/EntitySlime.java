@@ -96,11 +96,6 @@ public class EntitySlime extends EntityLiving implements IMob
         this.wasOnGround = tagCompund.getBoolean("wasOnGround");
     }
 
-    protected EnumParticleTypes getParticleType()
-    {
-        return EnumParticleTypes.SLIME;
-    }
-
     /**
      * Returns the name of the sound played when the slime jumps.
      */
@@ -126,19 +121,6 @@ public class EntitySlime extends EntityLiving implements IMob
         if (this.onGround && !this.wasOnGround)
         {
             int i = this.getSlimeSize();
-
-            for (int j = 0; j < i * 8; ++j)
-            {
-                float f = this.rand.nextFloat() * (float)Math.PI * 2.0F;
-                float f1 = this.rand.nextFloat() * 0.5F + 0.5F;
-                float f2 = MathHelper.sin(f) * (float)i * 0.5F * f1;
-                float f3 = MathHelper.cos(f) * (float)i * 0.5F * f1;
-                World world = this.worldObj;
-                EnumParticleTypes enumparticletypes = this.getParticleType();
-                double d0 = this.posX + (double)f2;
-                double d1 = this.posZ + (double)f3;
-                world.spawnParticle(enumparticletypes, d0, this.getEntityBoundingBox().minY, d1, 0.0D, 0.0D, 0.0D, new int[0]);
-            }
 
             if (this.makesSoundOnLand())
             {
