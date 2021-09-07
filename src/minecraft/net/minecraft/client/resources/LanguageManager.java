@@ -90,7 +90,7 @@ public class LanguageManager implements IResourceManagerReloadListener
 
     public Language getCurrentLanguage()
     {
-        return this.languageMap.containsKey(this.currentLanguage) ? (Language)this.languageMap.get(this.currentLanguage) : (Language)this.languageMap.get("en_US");
+        return this.languageMap.get("en_US");
     }
 
     public SortedSet<Language> getLanguages()

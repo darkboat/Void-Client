@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -25,6 +26,7 @@ import com.google.common.collect.Sets;
 import com.google.gson.Gson;
 
 import me.rexysaur.void_.Client.Client;
+import me.rexysaur.void_.Client.mod.Mod;
 import me.rexysaur.void_.Client.util.CrosshairColours;
 import me.rexysaur.void_.Client.util.KeystrokesColoursKey;
 import me.rexysaur.void_.Client.util.KeystrokesColoursLetter;
@@ -230,9 +232,21 @@ public class GameSettings
         addClientKeybinds();
     }
     
+    public static ArrayList<KeyBinding> binds = new ArrayList<KeyBinding>();
+    
+    public static void addBind(Mod mod)
+    {
+    	binds.add(new KeyBinding(mod.name, mod.bind, "Mods"));
+    }
+    
     public void addClientKeybinds()
     {
     	this.keyBindings = ((KeyBinding[])ArrayUtils.add(this.keyBindings, this.HUD_Config));
+    	
+    	for(KeyBinding bind : binds)
+    	{
+    		this.keyBindings = ((KeyBinding[])ArrayUtils.add(this.keyBindings, bind));
+    	}
     }
 
     /**

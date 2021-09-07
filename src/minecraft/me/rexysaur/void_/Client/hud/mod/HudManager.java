@@ -7,6 +7,7 @@ import me.rexysaur.void_.Client.hud.mod.impl.CPSMod;
 import me.rexysaur.void_.Client.hud.mod.impl.Crosshair;
 import me.rexysaur.void_.Client.hud.mod.impl.FPSMod;
 import me.rexysaur.void_.Client.hud.mod.impl.Keystrokes;
+import me.rexysaur.void_.Client.hud.mod.impl.ToggleSprint;
 
 public class HudManager {
 	
@@ -27,6 +28,7 @@ public class HudManager {
 		hudMods.add(crosshair = new Crosshair());
 		hudMods.add(armourDurability = new ArmorDurability());
 		hudMods.add(CPS = new CPSMod());
+		hudMods.add(new ToggleSprint());
 	}
 	
 	public void renderMods()

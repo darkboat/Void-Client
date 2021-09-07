@@ -2,6 +2,8 @@ package me.rexysaur.void_.Client.mod.impl;
 
 import java.awt.Color;
 
+import org.lwjgl.input.Keyboard;
+
 import me.rexysaur.void_.Client.mod.Category;
 import me.rexysaur.void_.Client.mod.Mod;
 
@@ -11,9 +13,10 @@ public class EnchantGlint extends Mod {
 	private Color customColor = new Color(112, 205, 118 );
 
 	public EnchantGlint() {
-		super("EnchantGlint", "Add a custom enchant glint", Category.MISC);
+		super("EnchantGlint", Keyboard.KEY_0);
 
 		super.enabled = true;
+		super.toggle = true;
 	}
 
 	public Color getColor()

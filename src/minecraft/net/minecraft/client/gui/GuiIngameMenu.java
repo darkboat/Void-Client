@@ -2,8 +2,8 @@ package net.minecraft.client.gui;
 
 import java.io.IOException;
 
-import me.rexysaur.void_.Client.ui.ClientMainMenu;
-import me.rexysaur.void_.Client.ui.ClientOptionsMenu;
+import me.rexysaur.void_.Client.ui.Menus.ClientMainMenu;
+import me.rexysaur.void_.Client.ui.Menus.ClientOptionsMenu;
 import me.rexysaur.void_.Client.util.Background;
 import net.minecraft.client.gui.achievement.GuiAchievements;
 import net.minecraft.client.gui.achievement.GuiStats;

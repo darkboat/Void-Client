@@ -51,6 +51,10 @@ public class FPSMod extends HudMod {
 	
 	public String getFPS()
 	{
-		return "§0[§6FPS§f:" + mc.getDebugFPS() + "§0]";
+		final String bracket = "§0";
+		final String name = "§6";
+		final String count = "§f";
+		
+		return bracket + "[ " + name + "FPS" + count + " : " + mc.getDebugFPS() + bracket + " ]";
 	}
 }

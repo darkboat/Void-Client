@@ -39,6 +39,6 @@ public class Addon {
 	
 	public void onTick(ClientTick event) throws IOException
 	{
-		
+
 	}
 }

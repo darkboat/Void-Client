@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 import me.rexysaur.void_.Client.Client;
 import me.rexysaur.void_.Client.hud.mod.HudMod;
+import me.rexysaur.void_.Client.ui.mods.UIMod;
 import net.minecraft.client.settings.GameSettings;
 
 public class SaveManager {
@@ -52,16 +53,20 @@ public class SaveManager {
 		{
 			if (mod.draggable)
 			{
-				if(mod.enabled)
-				{
-					Option x = new Option(mod.name + "x", mod.getX());
-					Option y = new Option(mod.name + "y", mod.getY());
-					
-					options.add(x);
-					options.add(y);
-				}
+				Option x = new Option(mod.name + "x", mod.getX());
+				Option y = new Option(mod.name + "y", mod.getY());
+				
+				options.add(x);
+				options.add(y);
 			}
 		}
+
+//		for (UIMod mod : Client.INSTANCE.uimodmanager.mods)
+//		{
+//			Option enabled = new Option(mod.name + "enabled", mod.enabled);
+//
+//			options.add(enabled);
+//		}
 
 		// Keystrokes
 		options.add(KeystrokesKeyPressed);

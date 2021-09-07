@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer.entity;
 
+import me.rexysaur.void_.Client.Client;
 import net.minecraft.client.model.ModelBat;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.passive.EntityBat;
@@ -13,6 +14,8 @@ public class RenderBat extends RenderLiving<EntityBat>
     public RenderBat(RenderManager renderManagerIn)
     {
         super(renderManagerIn, new ModelBat(), 0.25F);
+        
+        Client.INSTANCE.bats.add(this);
     }
 
     /**

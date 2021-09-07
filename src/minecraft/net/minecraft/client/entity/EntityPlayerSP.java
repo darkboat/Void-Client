@@ -322,9 +322,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
      * second with the reduced value. Args: damageAmount
      */
     protected void damageEntity(DamageSource damageSrc, float damageAmount)
-    {
-    	Client.INSTANCE.combo += 1;
-    	
+    {	
         if (!this.isEntityInvulnerable(damageSrc))
         {
             this.setHealth(this.getHealth() - damageAmount);

@@ -78,6 +78,6 @@ public class CPSMod extends HudMod {
 		final long time = System.currentTimeMillis();
 		this.clicks.removeIf(aLong -> aLong + 1000 < time);
 		
-		return bracket + "[" + name + "CPS" + count + ":" + this.clicks.size() + bracket + "§0]";
+		return bracket + "[ " + name + "CPS" + count + " : " + this.clicks.size() + bracket + " ]";
 	}
 }

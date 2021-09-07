@@ -19,7 +19,7 @@ import org.lwjgl.util.glu.Project;
 
 import com.google.common.collect.Lists;
 
-import me.rexysaur.void_.Client.ui.ClientOptionsMenu;
+import me.rexysaur.void_.Client.ui.Menus.ClientOptionsMenu;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;

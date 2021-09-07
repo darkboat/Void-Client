@@ -1,12 +1,7 @@
 package me.rexysaur.void_.Client;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
-
-import com.google.gson.Gson;
 
 import me.rexysaur.void_.Client.addons.Addon;
 import me.rexysaur.void_.Client.addons.AddonManager;
@@ -18,13 +13,17 @@ import me.rexysaur.void_.Client.event.impl.ClientTick;
 import me.rexysaur.void_.Client.hud.HUDConfigScreen;
 import me.rexysaur.void_.Client.hud.mod.HudManager;
 import me.rexysaur.void_.Client.macro.impl.MacroManager;
+import me.rexysaur.void_.Client.mod.Category;
+import me.rexysaur.void_.Client.mod.Mod;
 import me.rexysaur.void_.Client.mod.ModManager;
-import me.rexysaur.void_.Client.util.Listing;
+import me.rexysaur.void_.Client.ui.mods.UIModManager;
 import me.rexysaur.void_.Client.util.MessageManager;
 import me.rexysaur.void_.Client.util.SaveManager;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderBat;
+import net.minecraft.client.settings.GameSettings;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.util.IChatComponent;
-import net.minecraft.util.Session;
 
 public class Client {
 	public Minecraft mc = Minecraft.getMinecraft();
@@ -38,6 +37,7 @@ public class Client {
 	public HudManager hudmanager;
 	public CosmeticManager cosmeticmanager;
 	public AddonManager addonmanager;
+	public UIModManager uimodmanager;
 
 	public ArrayList<String> KeystrokesKeyColours = new ArrayList<>();
 	public ArrayList<String> KeystrokesLetColours = new ArrayList<>();
@@ -45,25 +45,14 @@ public class Client {
 	public String NAME = "Void Client";
 	public String VERSION = "1.0.0";
 
-	public Session session;
-	private Object sessionService;
-	private String clientToken;
-
-	public int seconds;
 	public int tick;
-	public long start;
-	public float delta;
-	
-	public int combo = 0;
 	
 	public static int ENCRYPT_SALT = 5;
 
 	public static boolean isLoggedIn = isLauncher ? true : false;
-	
-	public static String auctioneerName;
-	
-	public ArrayList<Listing.Root> listings = new ArrayList<Listing.Root>();
-	
+
+	public ArrayList<RenderBat> bats = new ArrayList<RenderBat>();
+
 	public void startup()
 	{
 		System.err.println("WIDTH = " + mc.displayWidth);
@@ -74,11 +63,10 @@ public class Client {
 		hudmanager = new HudManager();
 		cosmeticmanager = new CosmeticManager();
 		addonmanager = new AddonManager();
+		uimodmanager = new UIModManager();
 		
 		eventmanager.register(this);
 
-		this.start = System.nanoTime();
-		
 		MacroManager.init();
 
 		CapeManager.equipCape(CapeManager.getCape("classic"));
@@ -86,14 +74,6 @@ public class Client {
 		if (!isLauncher)
 		{
 			SaveManager.getCredentials();
-		}
-		
-		Gson gson = new Gson();
-		Listing.Root[] listingArray = gson.fromJson(readItems(), Listing.Root[].class);
-
-		for(Listing.Root ls : listingArray)
-		{
-			listings.add(ls);
 		}
 	}
 
@@ -108,28 +88,6 @@ public class Client {
 		eventmanager.unregister(this);
 	}
 	
-	private static String readItems()
-	{
-		String output = "";
-		Scanner scanner;
-		try {
-			scanner = new Scanner(new File("C:\\Users\\mikae\\Desktop\\void 2.0\\src\\minecraft\\me\\rexysaur\\void_\\Client\\Items.json"));
-			
-			while(scanner.hasNextLine())
-			{
-				String text = scanner.nextLine();
-				output += text;
-			}
-			
-			scanner.close();
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-
-		return output;
-	}
-	
 	@EventTarget
 	public void onTick(ClientTick event) throws IOException
 	{
@@ -138,6 +96,31 @@ public class Client {
 			if(addon.isEnabled)
 			{
 				addon.onTick(event);
+			}
+		}
+		
+		for(Mod mod : Client.INSTANCE.modmanager.mods)
+		{
+			if(mod.isEnabled())
+			{
+				mod.tick();
+			}
+		}
+		
+		for(KeyBinding bind : GameSettings.binds)
+		{
+			if (bind.isPressed())
+			{
+				Mod mod = Client.INSTANCE.modmanager.getMod(bind.getKeyDescription());
+				
+				if(mod.toggle)
+				{
+					mod.toggle();
+				}
+				else
+				{
+					mod.onEnable();
+				}
 			}
 		}
 

@@ -59,7 +59,7 @@ import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import me.rexysaur.void_.Client.Client;
 import me.rexysaur.void_.Client.Session.MinecraftLogin;
 import me.rexysaur.void_.Client.event.impl.ClientTick;
-import me.rexysaur.void_.Client.ui.ClientMainMenu;
+import me.rexysaur.void_.Client.ui.Menus.ClientMainMenu;
 import me.rexysaur.void_.Client.util.ClientLogin;
 import me.rexysaur.void_.Client.util.SaveManager;
 import net.minecraft.block.Block;

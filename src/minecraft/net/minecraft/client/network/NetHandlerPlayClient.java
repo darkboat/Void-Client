@@ -19,7 +19,7 @@ import com.mojang.authlib.GameProfile;
 
 import io.netty.buffer.Unpooled;
 import me.rexysaur.void_.Client.event.impl.EventMessage;
-import me.rexysaur.void_.Client.ui.ClientMainMenu;
+import me.rexysaur.void_.Client.ui.Menus.ClientMainMenu;
 import me.rexysaur.void_.Client.util.MessageManager;
 import net.minecraft.block.Block;
 import net.minecraft.client.ClientBrandRetriever;

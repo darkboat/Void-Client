@@ -38,5 +38,6 @@
 	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/tv/twitch/twitch/6.5/twitch-6.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mikae/Desktop/void 2.0/eclipse/Client/libraries/OptiFine_1.8.8_HD_U_I7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mikae/Desktop/void 2.0/jars/libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -30,9 +30,7 @@ public class HudMod {
 		try {
 			String xFromSave = SaveManager.getDataFromSave(name + "x");
 			String yFromSave = SaveManager.getDataFromSave(name + "y");
-			
-//			System.err.println(name + "x" + "  :  " + name + "y");
-			
+
 			if(xFromSave != "")
 			{
 				this.x = Integer.parseInt(xFromSave);
@@ -42,8 +40,6 @@ public class HudMod {
 				this.y = Integer.parseInt(yFromSave);
 			}
 			
-			System.err.println(this.name + "x = " + this.x + "    :    " + this.name + "y = " + this.y);
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
