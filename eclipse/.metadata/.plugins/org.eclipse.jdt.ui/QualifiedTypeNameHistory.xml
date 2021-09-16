@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
-    <fullyQualifiedTypeName name="tv.twitch.broadcast.FrameBuffer"/>
-    <fullyQualifiedTypeName name="tv.twitch.broadcast.UserInfo"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.Stream"/>
     <fullyQualifiedTypeName name="tv.twitch.broadcast.PixelFormat"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.Colours"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Session.MinecraftLogin"/>
     <fullyQualifiedTypeName name="net.minecraft.client.model.ModelBiped"/>
     <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
     <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.cosmetics.impl.hats.TopHat"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
@@ -44,20 +40,24 @@
     <fullyQualifiedTypeName name="optifine.json.JSONObject"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.event.impl.ClientTick"/>
     <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.SaveManager"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.Mod"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.mod.Category"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.mod.Mod"/>
     <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
     <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.hud.mod.impl.ToggleSprint"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.mods.UIModManager"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="net.minecraft.client.gui.FontRenderer"/>
-    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.mods.UIMod"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.mods.impl.Keystrokes"/>
     <fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderBat"/>
     <fullyQualifiedTypeName name="me.rexysaur.void_.Client.Client"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.util.SaveManager"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.mods.UIMod"/>
+    <fullyQualifiedTypeName name="me.rexysaur.void_.Client.ui.mods.impl.UIBool"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
 </qualifiedTypeNameHistroy>

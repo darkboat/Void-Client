@@ -3,6 +3,7 @@ package me.rexysaur.void_.Client.ui.Menus;
 import java.io.IOException;
 
 import me.rexysaur.void_.Client.Client;
+import me.rexysaur.void_.Client.ui.mods.InputBox;
 import me.rexysaur.void_.Client.ui.mods.UIMod;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiListExtended;
@@ -39,9 +40,12 @@ public class VoidClientOptions extends GuiScreen {
 		this.drawCenteredString(mc.fontRendererObj, "Void Configuration", 480, 200, -1);
 		GlStateManager.popMatrix();
         
-        for(UIMod mod : Client.INSTANCE.uimodmanager.getModsOfMENU("MAIN"))
+        for(Object mod : Client.INSTANCE.uimodmanager.getModsOfMENU("MAIN"))
         {
-        	mod.draw(this);
+        	if(mod instanceof UIMod)
+        	{
+            	((UIMod)mod).draw(this);	
+        	}
         }
 
 		super.drawScreen(mouseX, mouseY, partialTicks);
@@ -63,9 +67,27 @@ public class VoidClientOptions extends GuiScreen {
      */
     protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException
     {
-        for(UIMod mod : Client.INSTANCE.uimodmanager.getModsOfMENU("MAIN"))
+        for(Object mod : Client.INSTANCE.uimodmanager.getModsOfMENU("MAIN"))
         {
-        	mod.onClick(mouseX, mouseY);
+        	if(mod instanceof UIMod)
+        	{
+            	((UIMod)mod).onClick(mouseX, mouseY);
+        	}
+        	if(mod instanceof InputBox)
+        	{
+        		((InputBox)mod).onClick(mouseX, mouseY);
+        	}
+        }
+    }
+    
+    protected void keyPressed(int key) throws IOException
+    {
+        for(Object mod : Client.INSTANCE.uimodmanager.getModsOfMENU("MAIN"))
+        {
+        	if(mod instanceof InputBox)
+        	{
+        		((InputBox)mod).keyPressed(key);
+        	}
         }
     }
 

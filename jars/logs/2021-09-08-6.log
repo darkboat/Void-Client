@@ -1,0 +1,19 @@
+[22:17:15] [Client thread/INFO]: LWJGL Version: 2.9.4
+[22:17:15] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:17:15] [Client thread/ERROR]: Couldn't initialize twitch stream
+[22:17:15] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:17:15] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[22:17:15] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:17:15] [Thread-6/INFO]: OpenAL initialized.
+[22:17:16] [Sound Library Loader/INFO]: Sound engine started
+[22:17:16] [Client thread/INFO]: Created: 512x512 textures-atlas
+[22:24:06] [Client thread/INFO]: Stopping!
+[22:24:06] [Client thread/INFO]: SoundSystem shutting down...
+[22:24:06] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+twitch stream
+[22:23:53] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:23:53] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[22:23:53] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:23:53] [Thread-5/INFO]: OpenAL initialized.
+[22:23:53] [Sound Library Loader/INFO]: Sound engine started
+[22:23:54] [Client thread/INFO]: Created: 512x512 textures-atlas

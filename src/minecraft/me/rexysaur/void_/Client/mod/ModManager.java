@@ -3,6 +3,7 @@ package me.rexysaur.void_.Client.mod;
 import java.util.ArrayList;
 
 import me.rexysaur.void_.Client.mod.impl.EnchantGlint;
+import me.rexysaur.void_.Client.mod.impl.MobESP;
 import me.rexysaur.void_.Client.mod.impl.ToggleSprint;
 
 public class ModManager {
@@ -17,6 +18,7 @@ public class ModManager {
 		
 		mods.add(enchantglint = new EnchantGlint());
 		mods.add(new ToggleSprint());
+		mods.add(new MobESP());
 	}
 	
 	public Mod getMod(String name)

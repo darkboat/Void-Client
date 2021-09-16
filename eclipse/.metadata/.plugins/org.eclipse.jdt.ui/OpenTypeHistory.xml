@@ -14,8 +14,8 @@
     <typeInfo handle="=Client/src&lt;net.minecraft.client.renderer.entity{RenderPlayer.java[RenderPlayer" modifiers="1" timestamp="1630853809428"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.particle{EntityDropParticleFX.java[EntityDropParticleFX[WaterFactory" modifiers="9" timestamp="1630854873301"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.particle{EntityBreakingFX.java[EntityBreakingFX" modifiers="1" timestamp="1630219666542"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.settings{GameSettings.java[GameSettings" modifiers="1" timestamp="1630940313221"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiVideoSettings.java[GuiVideoSettings" modifiers="1" timestamp="1630219666226"/>
     <typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiIngame.java[GuiIngame" modifiers="1" timestamp="1630221989948"/>
-    <typeInfo handle="=Client/src&lt;net.minecraft.client.renderer.entity{RenderBat.java[RenderBat" modifiers="1" timestamp="1630219666796"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.renderer.entity{RenderBat.java[RenderBat" modifiers="1" timestamp="1630956081023"/>
+    <typeInfo handle="=Client/src&lt;net.minecraft.client.settings{GameSettings.java[GameSettings" modifiers="1" timestamp="1630940313221"/>
 </typeInfoHistroy>

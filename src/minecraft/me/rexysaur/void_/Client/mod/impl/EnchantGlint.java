@@ -10,7 +10,7 @@ import me.rexysaur.void_.Client.mod.Mod;
 public class EnchantGlint extends Mod {
 
 	private static final Color DEFAULT_COLOR = new Color(128, 64, 204);
-	private Color customColor = new Color(112, 205, 118 );
+	private Color customColor = new Color(243, 0, 255);
 
 	public EnchantGlint() {
 		super("EnchantGlint", Keyboard.KEY_0);

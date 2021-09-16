@@ -32,7 +32,7 @@ public class Sniper extends Addon {
 	{
 		super("SkyblockSniper");
 		
-		super.isEnabled = true;
+		super.isEnabled = false;
 	}
 	
 	@Override
@@ -44,7 +44,7 @@ public class Sniper extends Addon {
 		{
 			ticks = 0;
 
-			URL url = new URL("82.217.172.136/goodAuctions");
+			URL url = new URL("http://82.217.172.136/goodAuctions");
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("GET");

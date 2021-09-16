@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="System"/>
+		<item key="selection" value="FontRenderer"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="onClick"/>
+			<item value="drawCenteredString"/>
+			<item value="drawCenter"/>
+			<item value="drawCentererd"/>
 			<item value="System"/>
 			<item value="System.err"/>
 			<item value="200"/>
@@ -19,10 +23,6 @@
 			<item value="this.session"/>
 			<item value="gameConfig"/>
 			<item value="debug"/>
-			<item value="if (Client.INSTANCE.debug"/>
-			<item value="chat"/>
-			<item value="open"/>
-			<item value="inputField"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Background.Draw(this);"/>

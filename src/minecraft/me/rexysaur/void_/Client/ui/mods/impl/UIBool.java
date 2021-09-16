@@ -4,19 +4,21 @@ import java.io.IOException;
 
 import me.rexysaur.void_.Client.ui.mods.UIMod;
 import me.rexysaur.void_.Client.util.SaveManager;
+import net.minecraft.client.gui.GuiScreen;
 
 public class UIBool extends UIMod {
-	public boolean enabled;
+	public boolean enabled = false;
+	public String value = "";
 
 	public UIBool(String name, int x, int y, String MENU) {
-		super(name, x, y, MENU);
+		super(name, x, y, MENU, "CLICK");
 		
 		try {
-			String enabled = SaveManager.getDataFromSave(name + "enabled");
-			
-			if(enabled != null)
+			String en = SaveManager.getDataFromSave(name + "enabled");
+			if(en != null)
 			{
-				this.enabled = Boolean.getBoolean(enabled);
+				this.enabled = Boolean.getBoolean(en);
+				super.value = translate();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -24,18 +26,20 @@ public class UIBool extends UIMod {
 	}
 	
 	@Override
-	public void swapValue()
+	public void draw(GuiScreen gui)
 	{
-		this.enabled = !this.enabled;
+		super.draw(gui);
 	}
 	
 	@Override
-	public String getValue()
+	public void swapValue()
 	{
-		return translateEnabled();
+		this.enabled = !this.enabled;
+		super.value = translate();
 	}
 	
-	public String translateEnabled()
+	@Override
+	public String translate()
 	{
 		return enabled ? "enabled" : "disabled";
 	}
